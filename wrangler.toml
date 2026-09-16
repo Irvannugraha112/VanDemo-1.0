@@ -1,0 +1,10 @@
+name = "van-groq-api"
+main = "worker.js"
+compatibility_date = "2026-09-16"
+
+[vars]
+# GitHub Pages origin (Origin header has no repository path).
+ALLOWED_ORIGIN = "https://irvannugraha112.github.io"
+
+[observability]
+enabled = true
