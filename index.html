@@ -1,19 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Van — AI Business Operator</title>
-  <meta name="theme-color" content="#171717">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Van">
-  <meta name="description" content="Van — AI Business Operator: temukan kebocoran revenue, prioritaskan tindakan, dan eksekusi.">
-  <!-- Single-file: tanpa dependensi manifest/sw eksternal agar file:// dan content:// tetap jalan -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%23e8b84a'%3EV%3C/text%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%23e8b84a'%3EV%3C/text%3E%3C/svg%3E">
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Van — AI Business Operator</title>
+<meta content="#171717" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="Van" name="apple-mobile-web-app-title"/>
+<meta content="Van — AI Business Operator: temukan kebocoran revenue, prioritaskan tindakan, dan eksekusi." name="description"/>
+<meta content="2026.09-launch-clean-v2" name="van-release"/>
+<meta content="dark" name="color-scheme"/>
+<link rel="manifest" href="./manifest.json">
+<script src="./config.js"></script>
+<meta name="application-name" content="Van">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-TileColor" content="#171717">
+<!-- Single-file: tanpa dependensi manifest/sw eksternal agar file:// dan content:// tetap jalan -->
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%23e8b84a'%3EV%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171717'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%23e8b84a'%3EV%3C/text%3E%3C/svg%3E" rel="apple-touch-icon"/>
+<script>
   (function(){
     function showApp(){
       try {
@@ -34,7 +42,7 @@
     }, {passive:true});
   })();
   </script>
-  <style>
+<style>
     :root {
       --bg: #212121;
       --bg2: #2f2f2f;
@@ -1956,56 +1964,66 @@
     .school-page-dots { max-width: 140px; flex-wrap: wrap; justify-content: center; }
 
   </style>
-
 <style>
 .drawer-item span{display:flex;flex-direction:column;gap:2px;min-width:0}.drawer-item span small{font-size:11px;color:var(--dim);font-weight:400}.drawer-item span strong{font-weight:700;color:var(--accent)}.drawer-core{background:var(--accent-soft);border:1px solid rgba(232,184,74,.2);border-radius:12px;margin:0 8px;width:calc(100% - 16px)}.pulse-signal{border:1px solid var(--border);background:var(--bg);border-radius:14px;padding:13px 14px;margin-bottom:8px}.pulse-signal .ps-head{display:flex;align-items:center;gap:9px}.pulse-signal .ps-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}.pulse-signal .ps-title{font-size:13.5px;font-weight:700}.pulse-signal .ps-body{font-size:12.5px;color:var(--muted);line-height:1.5;margin-top:6px}.pulse-signal .ps-action{margin-top:9px;font-size:12px;color:var(--accent);font-weight:650}.pulse-empty{padding:14px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:12.5px;line-height:1.55}.pulse-score-note{font-size:11.5px;color:var(--dim);line-height:1.45;margin-top:8px}.pulse-flow{display:flex;gap:6px;overflow-x:auto;padding:2px 0 4px}.pulse-flow span{flex:0 0 auto;padding:6px 9px;border:1px solid var(--border);border-radius:999px;font-size:11px;color:var(--muted)}
 </style>
+
+<style id="van-pwa-install-style">
+#vanInstallBtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:99999;border:1px solid rgba(232,184,74,.55);background:#171717;color:#f5d78e;border-radius:999px;padding:10px 14px;font:600 13px system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.35);display:none;align-items:center;gap:7px;cursor:pointer}
+#vanInstallBtn:active{transform:scale(.98)}
+#vanInstallBtn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+</style>
 </head>
 <body>
-  <div class="media-lightbox" id="mediaLightbox" onclick="closeLightbox()"></div>
-  <!-- toast utama: #vanToast + #vanToastMsg di bawah -->
-
-  <!-- Splash masuk Van -->
-  <div class="splash" id="splash" onclick="dismissSplash()" ontouchend="dismissSplash()">
-    <div class="splash-bg"></div>
-    <div class="splash-particles" id="splashParticles"></div>
-    <div class="splash-ring"></div>
-    <div class="splash-ring r2"></div>
-    <div class="splash-logo-wrap">
-      <div class="splash-logo">
-        <!-- V + motif batik minimalis -->
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="batik" width="8" height="8" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="0.7" fill="#1a1208" opacity=".25"/>
-              <path d="M6 1.5c1 1 1 2 0 3" stroke="#1a1208" stroke-width=".5" opacity=".2"/>
-            </pattern>
-          </defs>
-          <path d="M12 10 L32 54 L52 10" stroke="#1a1208" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12 10 L32 54 L52 10" stroke="url(#batik)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M20 10 L32 40 L44 10" stroke="#1a1208" stroke-width="2.2" stroke-linecap="round" opacity=".35"/>
-        </svg>
-        <div class="splash-shine"></div>
-      </div>
-    </div>
-    <div class="splash-brand">
-      <h1>VAN</h1>
-      <p>AI Revenue Assistant</p>
-    </div>
-    <div class="splash-bar"><i></i></div>
-    <div class="splash-tap">Ketuk untuk masuk</div>
-  </div>
-
-  
-  <script>
+<div class="media-lightbox" id="mediaLightbox" onclick="closeLightbox()"></div>
+<!-- toast utama: #vanToast + #vanToastMsg di bawah -->
+<!-- Splash masuk Van -->
+<div class="splash" id="splash" onclick="dismissSplash()" ontouchend="dismissSplash()">
+<div class="splash-bg"></div>
+<div class="splash-particles" id="splashParticles"></div>
+<div class="splash-ring"></div>
+<div class="splash-ring r2"></div>
+<div class="splash-logo-wrap">
+<div class="splash-logo">
+<!-- V + motif batik minimalis -->
+<svg fill="none" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="8" id="batik" patternunits="userSpaceOnUse" width="8">
+<circle cx="2" cy="2" fill="#1a1208" opacity=".25" r="0.7"></circle>
+<path d="M6 1.5c1 1 1 2 0 3" opacity=".2" stroke="#1a1208" stroke-width=".5"></path>
+</pattern>
+</defs>
+<path d="M12 10 L32 54 L52 10" stroke="#1a1208" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.5"></path>
+<path d="M12 10 L32 54 L52 10" stroke="url(#batik)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.5"></path>
+<path d="M20 10 L32 40 L44 10" opacity=".35" stroke="#1a1208" stroke-linecap="round" stroke-width="2.2"></path>
+</svg>
+<div class="splash-shine"></div>
+</div>
+</div>
+<div class="splash-brand">
+<h1>VAN</h1>
+<p>AI Revenue Assistant</p>
+</div>
+<div class="splash-bar"><i></i></div>
+<div class="splash-tap">Ketuk untuk masuk</div>
+</div>
+<script>
 /* Kunci API: di production lewat backend saja. Fallback client hanya untuk uji file/content:// */
-var GROQ_FALLBACK_KEY = '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';
+var GROQ_FALLBACK_KEY = '';
 function getGroqKey(){
+  /*
+   * Production-safe routing: a user-supplied key always wins. The built-in
+   * fallback key is intentionally preserved for file:// / content:// demos,
+   * but is NOT automatically sent from a hosted web deployment.
+   */
   try {
     var k = localStorage.getItem('van_groq_key');
     if (k && String(k).trim()) return String(k).trim();
   } catch(e) {}
-  return GROQ_FALLBACK_KEY;
+  try {
+    if (isLocalFileApp()) return GROQ_FALLBACK_KEY;
+  } catch(e) {}
+  return '';
 }
 /** @deprecated gunakan getGroqKey() — tetap disinkron agar kode lama aman */
 var GROQ_KEY = getGroqKey();
@@ -2013,6 +2031,10 @@ function syncGroqKeyAlias(){ try { GROQ_KEY = getGroqKey(); } catch(e) {} }
 var backendOk = false;
 var vanToken = null;
 var VAN_API = (function(){
+  try {
+    var configured = (window.VAN_API_BASE || '').trim();
+    if (configured) return configured.replace(/\/$/, '');
+  } catch(e) {}
   try {
     var s = localStorage.getItem('van_api_base');
     if (s) return s.replace(/\/$/, '');
@@ -2079,7 +2101,7 @@ function refreshAiStatusUI(){
     try {
       var saved = localStorage.getItem('van_groq_key') || '';
       input.value = saved;
-      input.placeholder = st.usingFallback ? 'Kosong = pakai key demo bawaan' : 'gsk_…';
+      input.placeholder = st.usingFallback ? 'Masukkan key Groq Anda' : 'gsk_…';
     } catch(e) {}
   }
   if (badge) {
@@ -2100,14 +2122,14 @@ function refreshAiStatusUI(){
   if (detail) {
     var lines = [];
     if (st.backendOk) lines.push('Rute: server Van (' + (st.backendUrl || 'API') + ')');
-    else if (st.localFile) lines.push('Mode file lokal · chat lewat Groq di perangkat');
-    else lines.push('Backend tidak aktif · fallback Groq client');
+    else if (st.localFile) lines.push('Mode file lokal · chat lewat Groq dengan key perangkat');
+    else lines.push('Backend tidak aktif · masukkan key Groq pribadi untuk mode client');
     lines.push('Key: ' + st.masked + (st.usingFallback ? ' (demo)' : (st.userKey ? ' (tersimpan)' : '')));
     detail.textContent = lines.join(' · ');
   }
   if (keyHint) {
     keyHint.textContent = st.usingFallback
-      ? 'Belum ada key pribadi. Demo key aktif agar chat tetap jalan. Ganti dengan key Groq Anda bila perlu.'
+      ? (st.localFile ? 'Belum ada key pribadi. Masukkan key Groq Anda untuk mengaktifkan AI di versi web.' : 'Belum ada key pribadi. Untuk deployment web, hubungkan backend Van atau masukkan key Groq pribadi.')
       : 'Key tersimpan di perangkat ini saja (localStorage). Tidak dikirim ke server Van kecuali Anda pakai backend.';
   }
 }
@@ -2117,7 +2139,7 @@ function saveGroqKey(){
   try {
     if (!v) {
       localStorage.removeItem('van_groq_key');
-      toast('Key dihapus · memakai demo key bawaan');
+      toast('Key dihapus');
     } else {
       localStorage.setItem('van_groq_key', v);
       toast('Key Groq disimpan');
@@ -2136,7 +2158,7 @@ function clearGroqKey(){
   if (input) { input.value = ''; input.dataset.touched = ''; }
   syncGroqKeyAlias();
   refreshAiStatusUI();
-  toast('Key dihapus · demo key aktif');
+  toast('Key dihapus');
 }
 async function testAiConnection(){
   var btn = document.getElementById('aiTestBtn');
@@ -2148,12 +2170,6 @@ async function testAiConnection(){
   } catch(e) {}
   syncGroqKeyAlias();
   var key = getGroqKey();
-  if (!key || String(key).indexOf('YOUR_') >= 0) {
-    if (result) { result.textContent = 'Gagal: belum ada API key.'; result.style.color = '#f87171'; }
-    if (btn) { btn.disabled = false; btn.textContent = 'Uji koneksi'; }
-    refreshAiStatusUI();
-    return;
-  }
   // Prefer backend if ok
   if (backendOk && VAN_API) {
     try {
@@ -2168,7 +2184,13 @@ async function testAiConnection(){
       }
     } catch(e) {}
   }
-  // Client Groq ping (minimal completion)
+  // Client Groq ping (minimal completion) — hanya fallback jika pengguna memang menyimpan key sendiri.
+  if (!key || String(key).indexOf('YOUR_') >= 0) {
+    if (result) { result.textContent = 'Backend belum aktif dan tidak ada key Groq lokal.'; result.style.color = '#f87171'; }
+    if (btn) { btn.disabled = false; btn.textContent = 'Uji koneksi'; }
+    refreshAiStatusUI();
+    return;
+  }
   try {
     var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
@@ -2178,7 +2200,7 @@ async function testAiConnection(){
         'Authorization': 'Bearer ' + key
       },
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',
+        model: 'openai/gpt-oss-20b',
         messages: [{ role: 'user', content: 'Reply with exactly: OK' }],
         max_tokens: 8,
         temperature: 0
@@ -2327,8 +2349,8 @@ function cloudSyncDown(){}
 function cloudSyncUp(){}
 
 const GROQ_MODEL='openai/gpt-oss-120b';
-const GROQ_MODEL_FALLBACK='llama-3.3-70b-versatile';
-const GROQ_VISION_MODELS=['qwen/qwen3.6-27b','meta-llama/llama-4-scout-17b-16e-instruct','meta-llama/llama-4-maverick-17b-128e-instruct','qwen/qwen3.8-27b'];
+const GROQ_MODEL_FALLBACK='qwen/qwen3.6-27b';
+const GROQ_VISION_MODELS=['qwen/qwen3.6-27b','qwen/qwen3.8-27b'];
 
 
   (function(){
@@ -2498,279 +2520,262 @@ function startUITourForce(){
 window.startUITourForce = startUITourForce;
 /* van tour hard bind */
 </script>
-
-  <div class="app" id="appRoot">
-    <div class="top">
-      <div class="top-left">
-        <button class="icon-btn" onclick="openDrawer()" aria-label="Menu">
-          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-        <button class="icon-btn" id="btnNewChat" onclick="newChat()" aria-label="Chat baru" title="Chat baru">
-          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-      </div>
-      <div class="top-logo">
-        <div class="header-feat" id="headerFeat" title="Mode aktif">
-          <svg id="headerFeatIcon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-      </div>
-      <div class="top-right">
-        <button class="icon-btn plan-badge" id="planBadge" type="button" title="Paket" onclick="goPage('sub')" aria-label="Paket aktif">
-          <svg id="planBadgeIcon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </button>
-        
-      </div>
-    </div>
-
-    <div class="modes" id="modes" aria-hidden="true"></div>
-    <div class="mode-wrap" id="modeWrap">
-      <button class="mode-btn" id="modeBtn" onclick="toggleModePanel()">
-        <div><span class="m-name" id="modeLabel">Standar</span><span class="m-sub" id="modeSub">Asisten umum Van</span></div>
-        <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-      </button>
-            <div class="mode-panel" id="modePanel">
-        <button class="mode-opt active" data-mode="standar" onclick="pickMode('standar')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-          <span class="mode-tx"><strong>Standar</strong><span>Default · asisten umum</span></span>
-        </button>
-        <button class="mode-opt" data-mode="konsultan" onclick="pickMode('konsultan')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
-          <span class="mode-tx"><strong>Konsultan</strong><span>Strategi & rekomendasi</span></span>
-        </button>
-        <button class="mode-opt" data-mode="eksekutor" onclick="pickMode('eksekutor')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
-          <span class="mode-tx"><strong>Eksekutor</strong><span>Langkah aksi hari ini</span></span>
-        </button>
-        <button class="mode-opt" data-mode="analisis" onclick="pickMode('analisis')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></span>
-          <span class="mode-tx"><strong>Analisis</strong><span>Bedah akar masalah</span></span>
-        </button>
-        <button class="mode-opt" data-mode="qc" onclick="pickMode('qc')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
-          <span class="mode-tx"><strong>QC / Produksi</strong><span>Mutu, reject, CAPA</span></span>
-        </button>
-        <button class="mode-opt" data-mode="vanpro" onclick="pickMode('vanpro')">
-          <span class="mode-ic"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
-          <span class="mode-tx"><strong>Van Pro</strong><span>Gabungan terbaik</span></span>
-        </button>
-      </div></div>
-
-    <div class="messages" id="messages"></div>
-    <div class="memory" id="memory"></div>
-
-    <div class="composer" id="composer">
-      <div class="attach-preview" id="attachPreview"></div>
-      <div class="composer-box">
-        <button class="tool-btn" type="button" onclick="openAttachSheet()" title="Lampirkan">
-          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <input type="file" id="fileInput" multiple accept="*/*" onchange="onFile(this)" style="display:none">
-        <input type="file" id="galleryInput" multiple accept="image/*,video/*" onchange="onFile(this)" style="display:none">
-        <input type="file" id="cameraInput" accept="image/*" capture="environment" onchange="onFile(this)" style="display:none">
-        <button class="tool-btn" type="button" id="micBtn" onclick="toggleMic()" title="Voice note">
-          <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v4M8 23h8"/></svg>
-        </button>
-        <textarea id="input" rows="1" placeholder="Pesan ke Van..." onkeydown="onKey(event)" onkeyup="onKeyUp(event)" oninput="autoH(this);try{updateSendBtn()}catch(e){}"></textarea>
-        <button class="send-btn" id="sendBtn" onclick="onSendBtn()" aria-label="Kirim">
-          <svg viewBox="0 0 24 24" id="sendIcon"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-        </button>
-      </div>
-      <div class="hint" hidden></div>
-    </div>
-  </div>
-
-  <div class="drawer-bg" id="drawerBg" onclick="closeDrawer()"></div>
-  <div class="drawer" id="drawer">
-    <div class="drawer-head">
-      <div class="logo">V</div>
-      <div><h2>Van</h2><p>AI Revenue Assistant</p></div>
-    </div>
-
-
-    <div class="drawer-scroll">
-    <button class="drawer-item" onclick="goPage('chat')"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Chat</button>
-    <button class="drawer-item" onclick="newChat()"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> Chat baru</button>
-    <div class="drawer-section" data-i18n="history">Riwayat chat</div>
-    <div id="histList"></div>
-    <div class="drawer-section" data-i18n="setup">Setup usaha</div>
-    <button class="drawer-item" onclick="goPage('memory')"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span>Memori bisnis<small>Profil & konteks usaha</small></span></button>
-    <button class="drawer-item" onclick="goPage('staff')"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Karyawan<small>Tim & jadwal shift</small></span></button>
-    <button class="drawer-item" onclick="goPage('crm')"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M8 7h.01"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>CRM Pelanggan<small>Kontak, follow-up, omzet</small></span></button>
-    <button class="drawer-item" onclick="setStockTab('stok')"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg><span>Stok &amp; Penjualan<small>Inventori dan omzet SKU</small></span></button>
-    <button class="drawer-item" onclick="goPage('finance')"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>Keuangan Usaha<small>Kas, income, expense</small></span></button>
-    <div class="drawer-section" data-i18n="ops">Operasional</div>
-    <button class="drawer-item drawer-core" onclick="goPage('workflow')"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h14"/><circle cx="18" cy="12" r="2"/><circle cx="20" cy="18" r="2"/></svg><span><strong>Alur Kerja</strong><small>Peta end-to-end Van</small></span></button>
-    <button class="drawer-item" onclick="goPage('chat')"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Chat Van<small>Analisis & konsultasi</small></span></button>
-    <button class="drawer-item drawer-core" onclick="goPage('pulse')"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span><strong>Revenue Pulse</strong><small>Diagnosis kebocoran omzet</small></span></button>
-    <button class="drawer-item" onclick="goPage('workspace')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span>Workspace<small>Eksekusi prioritas</small></span></button>
-    <button class="drawer-item" onclick="goPage('reminder')"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span>Reminder<small>Jadwal & follow-up</small></span></button>
-    <div class="drawer-section" data-i18n="academy">Akademi</div>
-    <button class="drawer-item" onclick="goPage('learn')"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>AI Learning<small>Orientasi Van, tour, tugas awal</small></span></button>
-    <button class="drawer-item" onclick="__schoolView='home';goPage('school')"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span>Van School<small>10 kelas UMKM, tugas, ujian, rapor</small></span></button>
-    <button class="drawer-item" onclick="goPage('guide')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Panduan<small>Tour langkah demi langkah</small></span></button>
-    <button class="drawer-item" onclick="goPage('simulasi')"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-6"/></svg><span>Simulasi usaha<small>Uji modal, omzet, biaya</small></span></button>
-    <div class="drawer-section" data-i18n="account">Akun</div>
-    <button class="drawer-item" onclick="goPage('social')"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Van Social</span></button>
-    <button class="drawer-item" onclick="goPage('sub')"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg><span>Berlangganan</span></button>
-    <button class="drawer-item" onclick="goPage('settings')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg><span id="drawerSettingsLabel">Pengaturan</span></button>
-    <button class="drawer-item" onclick="goPage('privacy')"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span id="drawerPrivacyLabel">Privasi</span></button>
-    <button class="drawer-item" id="ownerItem" style="display:none" onclick="goPage('owner')"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-6"/></svg> Owner</button>
-    </div>
+<div class="app" id="appRoot">
+<div class="top">
+<div class="top-left">
+<button aria-label="Menu" class="icon-btn" onclick="openDrawer()">
+<svg viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+</button>
+<button aria-label="Chat baru" class="icon-btn" id="btnNewChat" onclick="newChat()" title="Chat baru">
+<svg viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+</div>
+<div class="top-logo">
+<div class="header-feat" id="headerFeat" title="Mode aktif">
+<svg id="headerFeatIcon" viewbox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+</div>
+</div>
+<div class="top-right">
+<button aria-label="Paket aktif" class="icon-btn plan-badge" id="planBadge" onclick="goPage('sub')" title="Paket" type="button">
+<svg id="planBadgeIcon" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+</button>
+</div>
+</div>
+<div aria-hidden="true" class="modes" id="modes"></div>
+<div class="mode-wrap" id="modeWrap">
+<button class="mode-btn" id="modeBtn" onclick="toggleModePanel()">
+<div><span class="m-name" id="modeLabel">Standar</span><span class="m-sub" id="modeSub">Asisten umum Van</span></div>
+<svg viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div class="mode-panel" id="modePanel">
+<button class="mode-opt active" data-mode="standar" onclick="pickMode('standar')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
+<span class="mode-tx"><strong>Standar</strong><span>Default · asisten umum</span></span>
+</button>
+<button class="mode-opt" data-mode="konsultan" onclick="pickMode('konsultan')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></span>
+<span class="mode-tx"><strong>Konsultan</strong><span>Strategi &amp; rekomendasi</span></span>
+</button>
+<button class="mode-opt" data-mode="eksekutor" onclick="pickMode('eksekutor')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></span>
+<span class="mode-tx"><strong>Eksekutor</strong><span>Langkah aksi hari ini</span></span>
+</button>
+<button class="mode-opt" data-mode="analisis" onclick="pickMode('analisis')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg></span>
+<span class="mode-tx"><strong>Analisis</strong><span>Bedah akar masalah</span></span>
+</button>
+<button class="mode-opt" data-mode="qc" onclick="pickMode('qc')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+<span class="mode-tx"><strong>QC / Produksi</strong><span>Mutu, reject, CAPA</span></span>
+</button>
+<button class="mode-opt" data-mode="vanpro" onclick="pickMode('vanpro')">
+<span class="mode-ic"><svg viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></span>
+<span class="mode-tx"><strong>Van Pro</strong><span>Gabungan terbaik</span></span>
+</button>
+</div></div>
+<div class="messages" id="messages"></div>
+<div class="memory" id="memory"></div>
+<div class="composer" id="composer">
+<div class="attach-preview" id="attachPreview"></div>
+<div class="composer-box">
+<button class="tool-btn" onclick="openAttachSheet()" title="Lampirkan" type="button">
+<svg viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<input accept="*/*" id="fileInput" multiple="" onchange="onFile(this)" style="display:none" type="file"/>
+<input accept="image/*,video/*" id="galleryInput" multiple="" onchange="onFile(this)" style="display:none" type="file"/>
+<input accept="image/*" capture="environment" id="cameraInput" onchange="onFile(this)" style="display:none" type="file"/>
+<button class="tool-btn" id="micBtn" onclick="toggleMic()" title="Voice note" type="button">
+<svg viewbox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><path d="M12 19v4M8 23h8"></path></svg>
+</button>
+<textarea id="input" oninput="autoH(this);try{updateSendBtn()}catch(e){}" onkeydown="onKey(event)" onkeyup="onKeyUp(event)" placeholder="Pesan ke Van..." rows="1"></textarea>
+<button aria-label="Kirim" class="send-btn" id="sendBtn" onclick="onSendBtn()">
+<svg id="sendIcon" viewbox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+</button>
+</div>
+<div class="hint" hidden=""></div>
+</div>
+</div>
+<div class="drawer-bg" id="drawerBg" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+<div class="drawer-head">
+<div class="logo">V</div>
+<div><h2>Van</h2><p>AI Revenue Assistant</p></div>
+</div>
+<div class="drawer-scroll">
+<button class="drawer-item" onclick="goPage('chat')"><svg viewbox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Chat</button>
+<button class="drawer-item" onclick="newChat()"><svg viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg> Chat baru</button>
+<div class="drawer-section" data-i18n="history">Riwayat chat</div>
+<div id="histList"></div>
+<div class="drawer-section" data-i18n="setup">Setup usaha</div>
+<button class="drawer-item" onclick="goPage('memory')"><svg viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg><span>Memori bisnis<small>Profil &amp; konteks usaha</small></span></button>
+<button class="drawer-item" onclick="goPage('staff')"><svg viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Karyawan<small>Tim &amp; jadwal shift</small></span></button>
+<button class="drawer-item" onclick="goPage('crm')"><svg viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M8 7h.01"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>CRM Pelanggan<small>Kontak, follow-up, omzet</small></span></button>
+<button class="drawer-item" onclick="setStockTab('stok')"><svg viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" x2="12" y1="22.08" y2="12"></line></svg><span>Stok &amp; Penjualan<small>Inventori dan omzet SKU</small></span></button>
+<button class="drawer-item" onclick="goPage('finance')"><svg viewbox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg><span>Keuangan Usaha<small>Kas, income, expense</small></span></button>
+<div class="drawer-section" data-i18n="ops">Operasional</div>
+<button class="drawer-item drawer-core" onclick="goPage('workflow')"><svg viewbox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h14"></path><circle cx="18" cy="12" r="2"></circle><circle cx="20" cy="18" r="2"></circle></svg><span><strong>Alur Kerja</strong><small>Peta end-to-end Van</small></span></button>
+<button class="drawer-item" onclick="goPage('chat')"><svg viewbox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Chat Van<small>Analisis &amp; konsultasi</small></span></button>
+<button class="drawer-item drawer-core" onclick="goPage('pulse')"><svg viewbox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg><span><strong>Revenue Pulse</strong><small>Diagnosis kebocoran omzet</small></span></button>
+<button class="drawer-item" onclick="goPage('workspace')"><svg viewbox="0 0 24 24"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="14" y="14"></rect><rect height="7" width="7" x="3" y="14"></rect></svg><span>Workspace<small>Eksekusi prioritas</small></span></button>
+<button class="drawer-item" onclick="goPage('reminder')"><svg viewbox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span>Reminder<small>Jadwal &amp; follow-up</small></span></button>
+<div class="drawer-section" data-i18n="academy">Akademi</div>
+<button class="drawer-item" onclick="goPage('learn')"><svg viewbox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>AI Learning<small>Orientasi Van, tour, tugas awal</small></span></button>
+<button class="drawer-item" onclick="__schoolView='home';goPage('school')"><svg viewbox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg><span>Van School<small>10 kelas UMKM, tugas, ujian, rapor</small></span></button>
+<button class="drawer-item" onclick="goPage('guide')"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" x2="12.01" y1="17" y2="17"></line></svg><span>Panduan<small>Tour langkah demi langkah</small></span></button>
+<button class="drawer-item" onclick="goPage('simulasi')"><svg viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 14l4-4 4 4 5-6"></path></svg><span>Simulasi usaha<small>Uji modal, omzet, biaya</small></span></button>
+<div class="drawer-section" data-i18n="account">Akun</div>
+<button class="drawer-item" onclick="goPage('social')"><svg viewbox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Van Social</span></button>
+<button class="drawer-item" onclick="goPage('sub')"><svg viewbox="0 0 24 24"><rect height="16" rx="2" width="22" x="1" y="4"></rect><path d="M1 10h22"></path></svg><span>Berlangganan</span></button>
+<button class="drawer-item" onclick="goPage('settings')"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg><span id="drawerSettingsLabel">Pengaturan</span></button>
+<button class="drawer-item" onclick="goPage('privacy')"><svg viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span id="drawerPrivacyLabel">Privasi</span></button>
+<button class="drawer-item" id="ownerItem" onclick="goPage('owner')" style="display:none"><svg viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 14l4-4 4 4 5-6"></path></svg> Owner</button>
+</div>
 <div class="drawer-footer">
-      <div class="drawer-mini-bar">
-        <button type="button" class="drawer-mini" onclick="goPage('settings')" title="Settings">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </button>
-      </div>
-      <div class="drawer-user" onclick="openLogin()">
-        <div class="av user" style="width:34px;height:34px" id="drawerAv">U</div>
-        <div>
-          <div style="font-size:13.5px;font-weight:500" id="drawerName">Masuk / Daftar</div>
-          <div style="font-size:11px;color:var(--dim)" id="drawerPlan">Akses fitur lengkap</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- AUTH -->
-  <div class="sheet-bg" id="loginSheet" onclick="if(event.target===this)closeLogin()">
-    <div class="sheet">
-      <div class="sheet-handle"></div>
-      <div class="logo sheet-logo">V</div>
-      <h2 id="authTitle">Masuk ke Van</h2>
-      <p class="sub" id="authSub">AI Revenue Assistant</p>
-
-      <div class="auth-tabs" id="authTabs">
-        <button class="auth-tab active" data-tab="login" onclick="setAuthTab('login')">Masuk</button>
-        <button class="auth-tab" data-tab="signup" onclick="setAuthTab('signup')">Daftar</button>
-      </div>
-
-      <div class="auth-err" id="authErr"></div>
-
-      <div id="authForm">
-        <div class="field" id="nameField" style="display:none">
-          <label>Nama lengkap</label>
-          <input type="text" id="authName" placeholder="Nama Anda" autocomplete="name">
-        </div>
-        <div class="field">
-          <label>Email</label>
-          <input type="email" id="authEmail" placeholder="nama@email.com" autocomplete="email">
-        </div>
-        <div class="field">
-          <label>Password</label>
-          <input type="password" id="authPass" placeholder="Minimal 6 karakter" autocomplete="current-password">
-        </div>
-        <div class="field" id="pass2Field" style="display:none">
-          <label>Ulangi password</label>
-          <input type="password" id="authPass2" placeholder="Ulangi password" autocomplete="new-password">
-        </div>
-        <div class="field-row" id="forgotRow">
-          <span></span>
-          <button type="button" class="link-btn" onclick="setAuthTab('forgot')">Lupa password?</button>
-        </div>
-        <button class="btn" id="authSubmit" onclick="submitAuth()">Masuk</button>
-      </div>
-
-      <div id="forgotForm" style="display:none">
-        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px;text-align:center;line-height:1.5">
+<div class="drawer-mini-bar">
+<button class="drawer-mini" onclick="goPage('settings')" title="Settings" type="button">
+<svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+</button>
+<button class="drawer-mini" id="drawerLangBtn" onclick="goPage('settings');setTimeout(function(){var c=document.getElementById('vanLangCard');if(c)c.scrollIntoView({behavior:'smooth',block:'center'});},200)" title="Language" type="button">
+<svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+<span id="drawerLangCode">ID</span>
+</button>
+</div>
+<div class="drawer-user" onclick="openLogin()">
+<div class="av user" id="drawerAv" style="width:34px;height:34px">U</div>
+<div>
+<div id="drawerName" style="font-size:13.5px;font-weight:500">Masuk / Daftar</div>
+<div id="drawerPlan" style="font-size:11px;color:var(--dim)">Akses fitur lengkap</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AUTH -->
+<div class="sheet-bg" id="loginSheet" onclick="if(event.target===this)closeLogin()">
+<div class="sheet">
+<div class="sheet-handle"></div>
+<div class="logo sheet-logo">V</div>
+<h2 id="authTitle">Masuk ke Van</h2>
+<p class="sub" id="authSub">AI Revenue Assistant</p>
+<div class="auth-tabs" id="authTabs">
+<button class="auth-tab active" data-tab="login" onclick="setAuthTab('login')">Masuk</button>
+<button class="auth-tab" data-tab="signup" onclick="setAuthTab('signup')">Daftar</button>
+</div>
+<div class="auth-err" id="authErr"></div>
+<div id="authForm">
+<div class="field" id="nameField" style="display:none">
+<label>Nama lengkap</label>
+<input autocomplete="name" id="authName" placeholder="Nama Anda" type="text"/>
+</div>
+<div class="field">
+<label>Email</label>
+<input autocomplete="email" id="authEmail" placeholder="nama@email.com" type="email"/>
+</div>
+<div class="field">
+<label>Password</label>
+<input autocomplete="current-password" id="authPass" placeholder="Minimal 6 karakter" type="password"/>
+</div>
+<div class="field" id="pass2Field" style="display:none">
+<label>Ulangi password</label>
+<input autocomplete="new-password" id="authPass2" placeholder="Ulangi password" type="password"/>
+</div>
+<div class="field-row" id="forgotRow">
+<span></span>
+<button class="link-btn" onclick="setAuthTab('forgot')" type="button">Lupa password?</button>
+</div>
+<button class="btn" id="authSubmit" onclick="submitAuth()">Masuk</button>
+</div>
+<div id="forgotForm" style="display:none">
+<p style="font-size:13.5px;color:var(--muted);margin-bottom:14px;text-align:center;line-height:1.5">
           Reset di perangkat ini (tanpa email). Masukkan email akun, lalu buat password baru.
         </p>
-        <div class="field">
-          <label>Email terdaftar</label>
-          <input type="email" id="forgotEmail" placeholder="nama@email.com" autocomplete="email">
-        </div>
-        <div class="field">
-          <label>Password baru</label>
-          <input type="password" id="forgotPass" placeholder="Minimal 6 karakter" autocomplete="new-password">
-        </div>
-        <div class="field">
-          <label>Ulangi password baru</label>
-          <input type="password" id="forgotPass2" placeholder="Ulangi password" autocomplete="new-password">
-        </div>
-        <button class="btn" onclick="submitForgot()">Simpan password baru</button>
-        <div class="auth-foot"><button class="link" onclick="setAuthTab('login')">Kembali ke masuk</button></div>
-      </div>
-
-      <div id="socialBlock">
-        <div class="divider">catatan masuk</div>
-        <p class="social-note">Google / X / Facebook belum tersedia di file lokal — butuh server produksi. Pakai email + password di atas.</p>
-      </div>
-
-      <div class="auth-foot" id="authSwitch">
-        <button class="link" onclick="closeLogin()">Nanti saja</button>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Attach picker -->
-  <div class="sheet-bg" id="attachSheet" onclick="if(event.target===this)closeAttachSheet()">
-    <div class="sheet" style="max-width:420px">
-      <div class="sheet-handle"></div>
-      <h2 style="font-size:17px;margin-bottom:4px">Lampirkan</h2>
-      <p class="sub" style="margin-bottom:14px">Pilih sumber file untuk chat Van</p>
-      <div class="attach-sheet-opts">
-        <button type="button" class="attach-opt" onclick="pickAttach('file')">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+<div class="field">
+<label>Email terdaftar</label>
+<input autocomplete="email" id="forgotEmail" placeholder="nama@email.com" type="email"/>
+</div>
+<div class="field">
+<label>Password baru</label>
+<input autocomplete="new-password" id="forgotPass" placeholder="Minimal 6 karakter" type="password"/>
+</div>
+<div class="field">
+<label>Ulangi password baru</label>
+<input autocomplete="new-password" id="forgotPass2" placeholder="Ulangi password" type="password"/>
+</div>
+<button class="btn" onclick="submitForgot()">Simpan password baru</button>
+<div class="auth-foot"><button class="link" onclick="setAuthTab('login')">Kembali ke masuk</button></div>
+</div>
+<div id="socialBlock">
+<div class="divider">catatan masuk</div>
+<p class="social-note">Google / X / Facebook belum tersedia di file lokal — butuh server produksi. Pakai email + password di atas.</p>
+</div>
+<div class="auth-foot" id="authSwitch">
+<button class="link" onclick="closeLogin()">Nanti saja</button>
+</div>
+</div>
+</div>
+<!-- Attach picker -->
+<div class="sheet-bg" id="attachSheet" onclick="if(event.target===this)closeAttachSheet()">
+<div class="sheet" style="max-width:420px">
+<div class="sheet-handle"></div>
+<h2 style="font-size:17px;margin-bottom:4px">Lampirkan</h2>
+<p class="sub" style="margin-bottom:14px">Pilih sumber file untuk chat Van</p>
+<div class="attach-sheet-opts">
+<button class="attach-opt" onclick="pickAttach('file')" type="button">
+<svg viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           File
           <span>Dokumen</span>
-        </button>
-        <button type="button" class="attach-opt" onclick="pickAttach('gallery')">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+</button>
+<button class="attach-opt" onclick="pickAttach('gallery')" type="button">
+<svg viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg>
           Galeri
           <span>Foto &amp; video</span>
-        </button>
-        <button type="button" class="attach-opt" onclick="pickAttach('camera')">
-          <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+</button>
+<button class="attach-opt" onclick="pickAttach('camera')" type="button">
+<svg viewbox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
           Kamera
           <span>Ambil foto</span>
-        </button>
-      </div>
-      <button type="button" class="btn-outline" style="width:100%;margin-top:14px" onclick="closeAttachSheet()">Batal</button>
-    </div>
-  </div>
-
-  <!-- Voice mode -->
-  <div class="voice-overlay" id="voiceOverlay">
-    <div class="voice-ring" id="voiceRing">
-      <div class="voice-core">
-        <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v4M8 23h8"/></svg>
-      </div>
-    </div>
-    <div class="voice-wave" id="voiceWave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="voice-status" id="voiceStatus">Mendengarkan…</div>
-    <div class="voice-live" id="voiceLive"><span class="interim">Mulai berbicara</span></div>
-    <div class="voice-actions">
-      <button class="voice-cancel" onclick="cancelVoice()" title="Batal">
-        <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
-      </button>
-      <button class="voice-send" onclick="confirmVoice()" title="Kirim">
-        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-      </button>
-    </div>
-    <div class="voice-toggle-row">
-      <label><input type="checkbox" id="voiceAutoSend" checked> Kirim otomatis saat selesai bicara</label>
-    </div>
-    <div class="voice-toggle-row">
-      <label><input type="checkbox" id="voiceAutoSpeak"> Van menjawab dengan suara</label>
-    </div>
-    <div class="voice-hint">Ketuk mic lagi atau × untuk batal · Bahasa: Indonesia</div>
-  </div>
-
-  <!-- TTS player -->
-  <div class="tts-bar" id="ttsBar">
-    <div class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-    <span class="tts-label" id="ttsLabel">Van sedang membaca…</span>
-    <button class="tts-btn" id="ttsPauseBtn" onclick="togglePauseSpeak()" title="Jeda / lanjut">
-      <svg viewBox="0 0 24 24" id="ttsPauseIcon"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-    </button>
-    <button class="tts-btn stop" onclick="stopSpeak()" title="Stop">
-      <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" stroke="none"/></svg>
-    </button>
-  </div>
-
-  <div id="vanToast" aria-live="polite"><span id="vanToastMsg"></span></div>
-
+</button>
+</div>
+<button class="btn-outline" onclick="closeAttachSheet()" style="width:100%;margin-top:14px" type="button">Batal</button>
+</div>
+</div>
+<!-- Voice mode -->
+<div class="voice-overlay" id="voiceOverlay">
+<div class="voice-ring" id="voiceRing">
+<div class="voice-core">
+<svg viewbox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><path d="M12 19v4M8 23h8"></path></svg>
+</div>
+</div>
+<div aria-hidden="true" class="voice-wave" id="voiceWave"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="voice-status" id="voiceStatus">Mendengarkan…</div>
+<div class="voice-live" id="voiceLive"><span class="interim">Mulai berbicara</span></div>
+<div class="voice-actions">
+<button class="voice-cancel" onclick="cancelVoice()" title="Batal">
+<svg viewbox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+</button>
+<button class="voice-send" onclick="confirmVoice()" title="Kirim">
+<svg viewbox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+</button>
+</div>
+<div class="voice-toggle-row">
+<label><input checked="" id="voiceAutoSend" type="checkbox"/> Kirim otomatis saat selesai bicara</label>
+</div>
+<div class="voice-toggle-row">
+<label><input id="voiceAutoSpeak" type="checkbox"/> Van menjawab dengan suara</label>
+</div>
+<div class="voice-hint">Ketuk mic lagi atau × untuk batal · Bahasa: Indonesia</div>
+</div>
+<!-- TTS player -->
+<div class="tts-bar" id="ttsBar">
+<div aria-hidden="true" class="eq"><span></span><span></span><span></span><span></span></div>
+<span class="tts-label" id="ttsLabel">Van sedang membaca…</span>
+<button class="tts-btn" id="ttsPauseBtn" onclick="togglePauseSpeak()" title="Jeda / lanjut">
+<svg id="ttsPauseIcon" viewbox="0 0 24 24"><rect height="16" width="4" x="6" y="4"></rect><rect height="16" width="4" x="14" y="4"></rect></svg>
+</button>
+<button class="tts-btn stop" onclick="stopSpeak()" title="Stop">
+<svg viewbox="0 0 24 24"><rect fill="currentColor" height="12" rx="1" stroke="none" width="12" x="6" y="6"></rect></svg>
+</button>
+</div>
+<div aria-live="polite" id="vanToast"><span id="vanToastMsg"></span></div>
 <script>
 const I = {
   copy: '<svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
@@ -3249,39 +3254,11 @@ function updateHeaderFeat(key){
   const k = key || mode || 'konsultan';
   const path = FEAT_ICONS[k] || FEAT_ICONS.konsultan;
   svg.innerHTML = path;
-  if (wrap) {
-    var titles = {
-      standar:'Standar', konsultan:'Konsultan', eksekutor:'Eksekutor', analisis:'Analisis', qc:'QC / Produksi', vanpro:'Van Pro',
-      chat:'chat', school:'school', learn:'learn', reminder:'reminder', pulse:'pulse', finance:'finance',
-      workspace:'workspace', stock:'stock', sales:'stock', staff:'staff', crm:'crm', workflow:'workflow',
-      social:'social', sub:'sub', guide:'guide', settings:'settings', owner:'Owner', memory:'memory'
-    };
-    var key = titles[k];
-    var label = 'Van';
-    try {
-      if (key && typeof t === 'function') {
-        var tr = t(key);
-        if (tr && tr !== key) label = tr;
-        else if (typeof titles[k] === 'string' && titles[k].indexOf(' ')>=0) label = titles[k];
-        else label = key;
-      } else if (typeof titles[k] === 'string') label = titles[k];
-    } catch(e) {}
-    // mode names stay as-is
-    if (['standar','konsultan','eksekutor','analisis','qc','vanpro'].indexOf(k) >= 0) {
-      label = ({standar:'Standar', konsultan:'Konsultan', eksekutor:'Eksekutor', analisis:'Analisis', qc:'QC / Produksi', vanpro:'Van Pro'})[k] || k;
-    } else if (k === 'owner') label = 'Owner';
-    else {
-      try {
-        var mapKey = ({
-          chat:'chat', school:'school', learn:'learn', reminder:'reminder', pulse:'pulse', finance:'finance',
-          workspace:'workspace', stock:'stock', sales:'stock', staff:'staff', crm:'crm', workflow:'workflow',
-          social:'social', sub:'sub', guide:'guide', settings:'settings', memory:'memory'
-        })[k];
-        if (mapKey && typeof t === 'function') label = t(mapKey) || label;
-      } catch(e2) {}
-    }
-    wrap.title = label;
-  }
+  if (wrap) wrap.title = ({
+    standar:'Standar', konsultan:'Konsultan', eksekutor:'Eksekutor', analisis:'Analisis', qc:'QC / Produksi', vanpro:'Van Pro',
+    chat:'Chat', school:'Van School', learn:'AI Learning', reminder:'Reminder', pulse:'Revenue Pulse', finance:'Keuangan',
+    workspace:'Workspace', stock:'Stok & Penjualan', sales:'Stok & Penjualan', staff:'Karyawan', crm:'CRM Pelanggan', workflow:'Alur Kerja', social:'Van Social', sub:'Berlangganan', guide:'Panduan', settings:'Pengaturan', owner:'Owner'
+  })[k] || 'Van';
 }
 function setMode(m){
   if (!MODE_PROMPTS[m]) m = 'standar';
@@ -3884,7 +3861,7 @@ var VAN_I18N = {
     leakRisk: 'Leak Risk Score · bukan prediksi omzet',
     leaksDetected: 'Kebocoran yang terdeteksi',
     openFinance: 'Buka Keuangan', openStock: 'Buka Stok / Penjualan',
-    allFilter: (typeof t==='function'?t('all'):'Semua'), needFollow: 'Perlu follow-up', hasWA: 'Punya WA',
+    allFilter: 'Semua', needFollow: 'Perlu follow-up', hasWA: 'Punya WA',
     noCustomers: 'Belum ada pelanggan. Tambah manual atau isi nama pembeli saat jual.',
     totalIncome: 'Total Income', totalExpense: 'Total Expense', passiveLabel: 'Passive', netLabel: 'Net',
     last7: '7 hari terakhir', trend4w: 'Tren 4 minggu',
@@ -4507,263 +4484,13 @@ var VAN_I18N = {
   } catch(e) {}
 })();
 
-// UI action strings for feature pages (all languages)
-(function(){
-  var UI = {
-    id: {
-      save:'Simpan', delete:'Hapus', add:'Tambah', edit:'Edit', cancel:'Batal', all:(typeof t==='function'?t('all'):'Semua'),
-      today:'Hari ini', thisWeek:'Minggu ini', thisMonth:'Bulan ini', thisYear:'Tahun ini',
-      history:'Riwayat', download:'Unduh', search:'Cari', note:'Catatan', name:'Nama',
-      platform:'Platform', revenue:'Omzet', bizName:'Nama usaha', savedBiz:'Usaha tersimpan (multi)',
-      editActiveBiz:'Edit usaha aktif', memoryDesc:'Profil usaha yang dipakai Van di chat, Pulse, stok, dan keuangan. Data tersimpan di perangkat ini.',
-      financeDesc:'Catat pemasukan & pengeluaran. Data di perangkat, terhubung ke Revenue Pulse.',
-      trend4w:'Tren 4 minggu', periodSummary:'Ringkasan periode', pastDays:'Riwayat hari sebelumnya',
-      showAllDates:'Tampilkan semua tanggal', workingNow:'Sedang bekerja', shiftDone:'Selesai bekerja',
-      followUp:'Follow-up', addCustomer:'Tambah pelanggan', contacts:'Kontak',
-      stockDesc:'Kelola inventori dan catat penjualan produk.', salesDesc:'Jual produk dan catat omzet SKU.',
-      crmNotifOn:'Notifikasi CRM aktif · follow-up jatuh tempo akan diingatkan.',
-      enableNotifHint:'Aktifkan notifikasi agar follow-up tidak terlewat.',
-      passiveLabel:'Passive', netLabel:'Net', totalIncome:'Total pemasukan', totalExpense:'Total pengeluaran'
-    },
-    en: {
-      save:'Save', delete:'Delete', add:'Add', edit:'Edit', cancel:'Cancel', all:'All',
-      today:'Today', thisWeek:'This week', thisMonth:'This month', thisYear:'This year',
-      history:'History', download:'Download', search:'Search', note:'Notes', name:'Name',
-      platform:'Platform', revenue:'Revenue', bizName:'Business name', savedBiz:'Saved businesses',
-      editActiveBiz:'Edit active business', memoryDesc:'Business profile used by Van in chat, Pulse, stock, and finance. Stored on this device.',
-      financeDesc:'Record income & expenses. On-device data, linked to Revenue Pulse.',
-      trend4w:'4-week trend', periodSummary:'Period summary', pastDays:'Past days history',
-      showAllDates:'Show all dates', workingNow:'Working now', shiftDone:'Shift finished',
-      followUp:'Follow-up', addCustomer:'Add customer', contacts:'Contacts',
-      stockDesc:'Manage inventory and record product sales.', salesDesc:'Sell products and record SKU revenue.',
-      crmNotifOn:'CRM notifications on · due follow-ups will be reminded.',
-      enableNotifHint:'Enable notifications so follow-ups are not missed.',
-      passiveLabel:'Passive', netLabel:'Net', totalIncome:'Total income', totalExpense:'Total expense'
-    },
-    de: {
-      save:'Speichern', delete:'Löschen', add:'Hinzufügen', edit:'Bearbeiten', cancel:'Abbrechen', all:'Alle',
-      today:'Heute', thisWeek:'Diese Woche', thisMonth:'Dieser Monat', thisYear:'Dieses Jahr',
-      history:'Verlauf', download:'Download', search:'Suche', note:'Notiz', name:'Name',
-      platform:'Plattform', revenue:'Umsatz', bizName:'Geschäftsname', savedBiz:'Gespeicherte Betriebe',
-      editActiveBiz:'Aktives Geschäft bearbeiten', memoryDesc:'Geschäftsprofil für Chat, Pulse, Lager und Finanzen. Lokal gespeichert.',
-      financeDesc:'Einnahmen & Ausgaben erfassen. Gerätedaten, verknüpft mit Revenue Pulse.',
-      trend4w:'4-Wochen-Trend', periodSummary:'Periodenübersicht', pastDays:'Vergangene Tage',
-      showAllDates:'Alle Daten anzeigen', workingNow:'Im Dienst', shiftDone:'Schicht beendet',
-      followUp:'Follow-up', addCustomer:'Kunde hinzufügen', contacts:'Kontakte',
-      stockDesc:'Inventar verwalten und Produktverkäufe erfassen.', salesDesc:'Produkte verkaufen und SKU-Umsatz erfassen.',
-      crmNotifOn:'CRM-Benachrichtigungen aktiv.', enableNotifHint:'Benachrichtigungen aktivieren.',
-      passiveLabel:'Passiv', netLabel:'Netto', totalIncome:'Gesamteinnahmen', totalExpense:'Gesamtausgaben'
-    },
-    zh: {
-      save:'保存', delete:'删除', add:'添加', edit:'编辑', cancel:'取消', all:'全部',
-      today:'今天', thisWeek:'本周', thisMonth:'本月', thisYear:'今年',
-      history:'历史', download:'下载', search:'搜索', note:'备注', name:'名称',
-      platform:'平台', revenue:'营收', bizName:'企业名称', savedBiz:'已保存企业',
-      editActiveBiz:'编辑当前企业', memoryDesc:'用于聊天、Pulse、库存与财务的业务档案，保存在本机。',
-      financeDesc:'记录收支。本机数据，关联营收脉搏。',
-      trend4w:'四周趋势', periodSummary:'周期摘要', pastDays:'往日记录',
-      showAllDates:'显示全部日期', workingNow:'工作中', shiftDone:'已下班',
-      followUp:'跟进', addCustomer:'添加客户', contacts:'联系人',
-      stockDesc:'管理库存并记录产品销售。', salesDesc:'销售产品并记录SKU营收。',
-      crmNotifOn:'CRM通知已开启。', enableNotifHint:'启用通知以免错过跟进。',
-      passiveLabel:'被动收入', netLabel:'净额', totalIncome:'总收入', totalExpense:'总支出'
-    },
-    ja: {
-      save:'保存', delete:'削除', add:'追加', edit:'編集', cancel:'キャンセル', all:'すべて',
-      today:'今日', thisWeek:'今週', thisMonth:'今月', thisYear:'今年',
-      history:'履歴', download:'ダウンロード', search:'検索', note:'メモ', name:'名前',
-      platform:'プラットフォーム', revenue:'売上', bizName:'事業名', savedBiz:'保存済み事業',
-      editActiveBiz:'アクティブ事業を編集', memoryDesc:'チャット・Pulse・在庫・財務で使う事業プロフィール。端末に保存。',
-      financeDesc:'収支を記録。端末データ、Revenue Pulse連携。',
-      trend4w:'4週間トレンド', periodSummary:'期間サマリー', pastDays:'過去の日次',
-      showAllDates:'全日付を表示', workingNow:'勤務中', shiftDone:'シフト終了',
-      followUp:'フォローアップ', addCustomer:'顧客を追加', contacts:'連絡先',
-      stockDesc:'在庫管理と商品販売の記録。', salesDesc:'商品販売とSKU売上の記録。',
-      crmNotifOn:'CRM通知オン。', enableNotifHint:'通知を有効にしてフォローを逃さない。',
-      passiveLabel:'パッシブ', netLabel:'純額', totalIncome:'総収入', totalExpense:'総支出'
-    },
-    ko: {
-      save:'저장', delete:'삭제', add:'추가', edit:'수정', cancel:'취소', all:'전체',
-      today:'오늘', thisWeek:'이번 주', thisMonth:'이번 달', thisYear:'올해',
-      history:'기록', download:'다운로드', search:'검색', note:'메모', name:'이름',
-      platform:'플랫폼', revenue:'매출', bizName:'사업명', savedBiz:'저장된 사업',
-      editActiveBiz:'활성 사업 편집', memoryDesc:'채팅·Pulse·재고·재무에 쓰이는 사업 프로필. 기기에 저장.',
-      financeDesc:'수입·지출 기록. 기기 데이터, 매출 펄스 연동.',
-      trend4w:'4주 추세', periodSummary:'기간 요약', pastDays:'지난 날짜',
-      showAllDates:'모든 날짜 보기', workingNow:'근무 중', shiftDone:'근무 종료',
-      followUp:'팔로업', addCustomer:'고객 추가', contacts:'연락처',
-      stockDesc:'재고 관리 및 제품 판매 기록.', salesDesc:'제품 판매 및 SKU 매출 기록.',
-      crmNotifOn:'CRM 알림 켜짐.', enableNotifHint:'알림을 켜 팔로업을 놓치지 마세요.',
-      passiveLabel:'패시브', netLabel:'순액', totalIncome:'총수입', totalExpense:'총지출'
-    },
-    th: {
-      save:'บันทึก', delete:'ลบ', add:'เพิ่ม', edit:'แก้ไข', cancel:'ยกเลิก', all:'ทั้งหมด',
-      today:'วันนี้', thisWeek:'สัปดาห์นี้', thisMonth:'เดือนนี้', thisYear:'ปีนี้',
-      history:'ประวัติ', download:'ดาวน์โหลด', search:'ค้นหา', note:'บันทึก', name:'ชื่อ',
-      platform:'แพลตฟอร์ม', revenue:'ยอดขาย', bizName:'ชื่อธุรกิจ', savedBiz:'ธุรกิจที่บันทึก',
-      editActiveBiz:'แก้ไขธุรกิจที่ใช้งาน', memoryDesc:'โปรไฟล์ธุรกิจสำหรับแชท Pulse สต็อก และการเงิน เก็บในเครื่อง',
-      financeDesc:'บันทึกรายรับ-รายจ่าย ข้อมูลในเครื่อง เชื่อม Pulse',
-      trend4w:'แนวโน้ม 4 สัปดาห์', periodSummary:'สรุปช่วงเวลา', pastDays:'ประวัติรายวัน',
-      showAllDates:'แสดงทุกวัน', workingNow:'กำลังทำงาน', shiftDone:'จบกะ',
-      followUp:'ติดตาม', addCustomer:'เพิ่มลูกค้า', contacts:'ผู้ติดต่อ',
-      stockDesc:'จัดการสต็อกและบันทึกการขายสินค้า', salesDesc:'ขายสินค้าและบันทึกยอด SKU',
-      crmNotifOn:'การแจ้งเตือน CRM เปิดอยู่', enableNotifHint:'เปิดการแจ้งเตือนเพื่อไม่พลาดการติดตาม',
-      passiveLabel:'Passive', netLabel:'สุทธิ', totalIncome:'รายรับรวม', totalExpense:'รายจ่ายรวม'
-    },
-    ar: {
-      save:'حفظ', delete:'حذف', add:'إضافة', edit:'تعديل', cancel:'إلغاء', all:'الكل',
-      today:'اليوم', thisWeek:'هذا الأسبوع', thisMonth:'هذا الشهر', thisYear:'هذه السنة',
-      history:'السجل', download:'تنزيل', search:'بحث', note:'ملاحظة', name:'الاسم',
-      platform:'المنصة', revenue:'الإيرادات', bizName:'اسم العمل', savedBiz:'الأعمال المحفوظة',
-      editActiveBiz:'تعديل العمل النشط', memoryDesc:'ملف العمل المستخدم في المحادثة والمخزون والمالية. يُحفظ على الجهاز.',
-      financeDesc:'سجّل الدخل والمصروفات. بيانات الجهاز مرتبطة بنبض الإيرادات.',
-      trend4w:'اتجاه 4 أسابيع', periodSummary:'ملخص الفترة', pastDays:'الأيام السابقة',
-      showAllDates:'عرض كل التواريخ', workingNow:'في العمل', shiftDone:'انتهت الوردية',
-      followUp:'متابعة', addCustomer:'إضافة عميل', contacts:'جهات الاتصال',
-      stockDesc:'إدارة المخزون وتسجيل مبيعات المنتجات.', salesDesc:'بيع المنتجات وتسجيل إيرادات SKU.',
-      crmNotifOn:'إشعارات CRM مفعّلة.', enableNotifHint:'فعّل الإشعارات حتى لا تفوت المتابعة.',
-      passiveLabel:'سلبي', netLabel:'صافي', totalIncome:'إجمالي الدخل', totalExpense:'إجمالي المصروف'
-    },
-    es: {
-      save:'Guardar', delete:'Eliminar', add:'Añadir', edit:'Editar', cancel:'Cancelar', all:'Todos',
-      today:'Hoy', thisWeek:'Esta semana', thisMonth:'Este mes', thisYear:'Este año',
-      history:'Historial', download:'Descargar', search:'Buscar', note:'Nota', name:'Nombre',
-      platform:'Plataforma', revenue:'Ingresos', bizName:'Nombre del negocio', savedBiz:'Negocios guardados',
-      editActiveBiz:'Editar negocio activo', memoryDesc:'Perfil usado en chat, Pulse, stock y finanzas. En este dispositivo.',
-      financeDesc:'Registra ingresos y gastos. Datos locales, vinculados a Revenue Pulse.',
-      trend4w:'Tendencia 4 semanas', periodSummary:'Resumen del periodo', pastDays:'Días anteriores',
-      showAllDates:'Mostrar todas las fechas', workingNow:'Trabajando', shiftDone:'Turno terminado',
-      followUp:'Seguimiento', addCustomer:'Añadir cliente', contacts:'Contactos',
-      stockDesc:'Gestiona inventario y ventas de productos.', salesDesc:'Vende productos y registra ingresos SKU.',
-      crmNotifOn:'Notificaciones CRM activas.', enableNotifHint:'Activa notificaciones para no perder seguimientos.',
-      passiveLabel:'Pasivo', netLabel:'Neto', totalIncome:'Ingresos totales', totalExpense:'Gastos totales'
-    },
-    fr: {
-      save:'Enregistrer', delete:'Supprimer', add:'Ajouter', edit:'Modifier', cancel:'Annuler', all:'Tous',
-      today:"Aujourd'hui", thisWeek:'Cette semaine', thisMonth:'Ce mois', thisYear:'Cette année',
-      history:'Historique', download:'Télécharger', search:'Rechercher', note:'Note', name:'Nom',
-      platform:'Plateforme', revenue:'CA', bizName:"Nom de l'entreprise", savedBiz:'Entreprises enregistrées',
-      editActiveBiz:'Modifier entreprise active', memoryDesc:'Profil utilisé dans le chat, Pulse, stock et finances. Sur cet appareil.',
-      financeDesc:'Enregistrer recettes et dépenses. Données locales, liées à Revenue Pulse.',
-      trend4w:'Tendance 4 semaines', periodSummary:'Résumé de période', pastDays:'Jours passés',
-      showAllDates:'Afficher toutes les dates', workingNow:'En service', shiftDone:'Fin de shift',
-      followUp:'Suivi', addCustomer:'Ajouter client', contacts:'Contacts',
-      stockDesc:'Gérer le stock et les ventes produits.', salesDesc:'Vendre et enregistrer le CA SKU.',
-      crmNotifOn:'Notifications CRM actives.', enableNotifHint:'Activez les notifications pour les suivis.',
-      passiveLabel:'Passif', netLabel:'Net', totalIncome:'Total recettes', totalExpense:'Total dépenses'
-    },
-    pt: {
-      save:'Salvar', delete:'Excluir', add:'Adicionar', edit:'Editar', cancel:'Cancelar', all:'Todos',
-      today:'Hoje', thisWeek:'Esta semana', thisMonth:'Este mês', thisYear:'Este ano',
-      history:'Histórico', download:'Baixar', search:'Buscar', note:'Nota', name:'Nome',
-      platform:'Plataforma', revenue:'Receita', bizName:'Nome do negócio', savedBiz:'Negócios salvos',
-      editActiveBiz:'Editar negócio ativo', memoryDesc:'Perfil usado no chat, Pulse, estoque e finanças. Neste dispositivo.',
-      financeDesc:'Registre receitas e despesas. Dados locais, ligados ao Revenue Pulse.',
-      trend4w:'Tendência 4 semanas', periodSummary:'Resumo do período', pastDays:'Dias anteriores',
-      showAllDates:'Mostrar todas as datas', workingNow:'Trabalhando', shiftDone:'Turno concluído',
-      followUp:'Follow-up', addCustomer:'Adicionar cliente', contacts:'Contatos',
-      stockDesc:'Gerencie estoque e vendas de produtos.', salesDesc:'Venda produtos e registre receita SKU.',
-      crmNotifOn:'Notificações CRM ativas.', enableNotifHint:'Ative notificações para não perder follow-ups.',
-      passiveLabel:'Passivo', netLabel:'Líquido', totalIncome:'Receita total', totalExpense:'Despesa total'
-    },
-    vi: {
-      save:'Lưu', delete:'Xóa', add:'Thêm', edit:'Sửa', cancel:'Hủy', all:'Tất cả',
-      today:'Hôm nay', thisWeek:'Tuần này', thisMonth:'Tháng này', thisYear:'Năm nay',
-      history:'Lịch sử', download:'Tải xuống', search:'Tìm', note:'Ghi chú', name:'Tên',
-      platform:'Nền tảng', revenue:'Doanh thu', bizName:'Tên doanh nghiệp', savedBiz:'DN đã lưu',
-      editActiveBiz:'Sửa DN đang chọn', memoryDesc:'Hồ sơ dùng cho chat, Pulse, kho và tài chính. Lưu trên máy.',
-      financeDesc:'Ghi thu chi. Dữ liệu máy, liên kết Revenue Pulse.',
-      trend4w:'Xu hướng 4 tuần', periodSummary:'Tóm tắt kỳ', pastDays:'Ngày trước',
-      showAllDates:'Hiện mọi ngày', workingNow:'Đang làm', shiftDone:'Hết ca',
-      followUp:'Theo dõi', addCustomer:'Thêm khách', contacts:'Liên hệ',
-      stockDesc:'Quản lý kho và bán sản phẩm.', salesDesc:'Bán hàng và ghi doanh thu SKU.',
-      crmNotifOn:'Thông báo CRM bật.', enableNotifHint:'Bật thông báo để không bỏ follow-up.',
-      passiveLabel:'Passive', netLabel:'Ròng', totalIncome:'Tổng thu', totalExpense:'Tổng chi'
-    },
-    ms: {
-      save:'Simpan', delete:'Padam', add:'Tambah', edit:'Edit', cancel:'Batal', all:(typeof t==='function'?t('all'):'Semua'),
-      today:'Hari ini', thisWeek:'Minggu ini', thisMonth:'Bulan ini', thisYear:'Tahun ini',
-      history:'Sejarah', download:'Muat turun', search:'Cari', note:'Nota', name:'Nama',
-      platform:'Platform', revenue:'Hasil', bizName:'Nama perniagaan', savedBiz:'Perniagaan disimpan',
-      editActiveBiz:'Edit perniagaan aktif', memoryDesc:'Profil untuk sembang, Pulse, stok dan kewangan. Disimpan pada peranti.',
-      financeDesc:'Rekod masuk/keluar. Data peranti, dipaut ke Revenue Pulse.',
-      trend4w:'Trend 4 minggu', periodSummary:'Ringkasan tempoh', pastDays:'Hari lepas',
-      showAllDates:'Tunjuk semua tarikh', workingNow:'Sedang bekerja', shiftDone:'Syif selesai',
-      followUp:'Susulan', addCustomer:'Tambah pelanggan', contacts:'Kenalan',
-      stockDesc:'Urus inventori dan jualan produk.', salesDesc:'Jual produk dan rekod hasil SKU.',
-      crmNotifOn:'Notifikasi CRM aktif.', enableNotifHint:'Aktifkan notifikasi supaya susulan tidak terlepas.',
-      passiveLabel:'Pasif', netLabel:'Bersih', totalIncome:'Jumlah masuk', totalExpense:'Jumlah keluar'
-    },
-    hi: {
-      save:'सहेजें', delete:'हटाएँ', add:'जोड़ें', edit:'संपादित', cancel:'रद्द', all:'सभी',
-      today:'आज', thisWeek:'इस सप्ताह', thisMonth:'इस माह', thisYear:'इस वर्ष',
-      history:'इतिहास', download:'डाउनलोड', search:'खोज', note:'नोट', name:'नाम',
-      platform:'प्लेटफ़ॉर्म', revenue:'राजस्व', bizName:'व्यवसाय नाम', savedBiz:'सहेजे गए व्यवसाय',
-      editActiveBiz:'सक्रिय व्यवसाय संपादित करें', memoryDesc:'चैट, Pulse, स्टॉक और वित्त के लिए प्रोफ़ाइल। इस डिवाइस पर सहेजा।',
-      financeDesc:'आय-व्यय दर्ज करें। डिवाइस डेटा, Revenue Pulse से जुड़ा।',
-      trend4w:'4 सप्ताह रुझान', periodSummary:'अवधि सारांश', pastDays:'पिछले दिन',
-      showAllDates:'सभी तिथियाँ दिखाएँ', workingNow:'कार्यरत', shiftDone:'शिफ्ट समाप्त',
-      followUp:'फ़ॉलो-अप', addCustomer:'ग्राहक जोड़ें', contacts:'संपर्क',
-      stockDesc:'इन्वेंटरी और उत्पाद बिक्री।', salesDesc:'उत्पाद बेचें और SKU राजस्व दर्ज करें।',
-      crmNotifOn:'CRM सूचनाएँ चालू।', enableNotifHint:'सूचनाएँ चालू करें।',
-      passiveLabel:'निष्क्रिय', netLabel:'शुद्ध', totalIncome:'कुल आय', totalExpense:'कुल व्यय'
-    },
-    tr: {
-      save:'Kaydet', delete:'Sil', add:'Ekle', edit:'Düzenle', cancel:'İptal', all:'Tümü',
-      today:'Bugün', thisWeek:'Bu hafta', thisMonth:'Bu ay', thisYear:'Bu yıl',
-      history:'Geçmiş', download:'İndir', search:'Ara', note:'Not', name:'Ad',
-      platform:'Platform', revenue:'Ciro', bizName:'İşletme adı', savedBiz:'Kayıtlı işletmeler',
-      editActiveBiz:'Aktif işletmeyi düzenle', memoryDesc:'Sohbet, Pulse, stok ve finans için profil. Cihazda saklanır.',
-      financeDesc:'Gelir-gider kaydı. Cihaz verisi, Revenue Pulse bağlantılı.',
-      trend4w:'4 haftalık trend', periodSummary:'Dönem özeti', pastDays:'Geçmiş günler',
-      showAllDates:'Tüm tarihleri göster', workingNow:'Çalışıyor', shiftDone:'Vardiya bitti',
-      followUp:'Takip', addCustomer:'Müşteri ekle', contacts:'Kişiler',
-      stockDesc:'Envanter ve ürün satışları.', salesDesc:'Ürün sat ve SKU cirosu kaydet.',
-      crmNotifOn:'CRM bildirimleri açık.', enableNotifHint:'Takipleri kaçırmamak için bildirimleri açın.',
-      passiveLabel:'Pasif', netLabel:'Net', totalIncome:'Toplam gelir', totalExpense:'Toplam gider'
-    },
-    ru: {
-      save:'Сохранить', delete:'Удалить', add:'Добавить', edit:'Изменить', cancel:'Отмена', all:'Все',
-      today:'Сегодня', thisWeek:'Эта неделя', thisMonth:'Этот месяц', thisYear:'Этот год',
-      history:'История', download:'Скачать', search:'Поиск', note:'Заметка', name:'Имя',
-      platform:'Платформа', revenue:'Выручка', bizName:'Название бизнеса', savedBiz:'Сохранённые бизнесы',
-      editActiveBiz:'Редактировать активный', memoryDesc:'Профиль для чата, Pulse, склада и финансов. На устройстве.',
-      financeDesc:'Учёт доходов и расходов. Данные на устройстве, связь с Revenue Pulse.',
-      trend4w:'Тренд 4 недели', periodSummary:'Сводка периода', pastDays:'Прошлые дни',
-      showAllDates:'Показать все даты', workingNow:'На смене', shiftDone:'Смена завершена',
-      followUp:'Follow-up', addCustomer:'Добавить клиента', contacts:'Контакты',
-      stockDesc:'Склад и продажи товаров.', salesDesc:'Продажа и учёт выручки SKU.',
-      crmNotifOn:'Уведомления CRM включены.', enableNotifHint:'Включите уведомления, чтобы не пропустить follow-up.',
-      passiveLabel:'Пассив', netLabel:'Чистыми', totalIncome:'Всего доход', totalExpense:'Всего расход'
-    }
-  };
-  // copy en defaults for any missing lang
+function getVanLang(){
   try {
-    Object.keys(VAN_LANGS || {}).forEach(function(code){
-      if (!VAN_I18N[code]) VAN_I18N[code] = {};
-      var src = UI[code] || UI.en;
-      Object.keys(UI.en).forEach(function(k){
-        VAN_I18N[code][k] = (src && src[k]) || UI.en[k];
-      });
-    });
-  } catch(e) {}
-})();
-
-(function(){
-  try {
-    Object.keys(VAN_I18N||{}).forEach(function(code){
-      var p = VAN_I18N[code];
-      if (!p) return;
-      if (!p.off) p.off = (code==='id'?'Nonaktif': code==='de'?'Inaktiv': code==='en'?'Inactive': p.off || 'Off');
-      if (!p.active) p.active = (code==='id'?'Aktif': code==='de'?'Aktiv': code==='en'?'Active': p.active || 'Active');
-    });
-  } catch(e) {}
-})();
-
-
-
-function getVanLang(){ return 'id'; }
-
+    var c = localStorage.getItem('van_lang') || 'id';
+    if (!VAN_LANGS[c]) c = 'id';
+    return c;
+  } catch(e) { return 'id'; }
+}
 function t(key){
   try {
     var code = getVanLang();
@@ -4780,17 +4507,33 @@ function vanSpeechLang(){
   return meta.speech || 'id-ID';
 }
 function vanLangInstruction(){
-  return '\n\nBahasa: Jawab selalu dalam Bahasa Indonesia yang jelas dan natural.\n';
+  var code = getVanLang();
+  var label = (VAN_LANGS[code] && VAN_LANGS[code].label) || code;
+  return '\n\nLANGUAGE: Always reply in ' + label + ' (code: ' + code + '). Match the user language if they clearly write in another language for one message, then return to ' + label + '.';
 }
-
 function setVanLang(code, opts){
-  /* Fitur ganti bahasa dihapus — UI tetap Bahasa Indonesia */
-  try { localStorage.setItem('van_lang', 'id'); } catch(e) {}
+  opts = opts || {};
+  if (!code || !VAN_LANGS[code]) {
+    try { toast('Bahasa tidak dikenali'); } catch(e) {}
+    code = 'id';
+  }
+  try { localStorage.setItem('van_lang', code); } catch(e) {}
+  window.__vanLangPending = code;
+  try {
+    var pg = (typeof currentPage !== 'undefined' && currentPage) ? currentPage : 'chat';
+    try { goPage(pg); } catch(e1) {}
+    try { applyVanLang(); } catch(e2) {}
+    try { fillLangSelect(); } catch(e3) {}
+    try {
+      var label = (VAN_LANGS[code] && VAN_LANGS[code].label) || code;
+      toast(((typeof t==='function' && t('applyLang') !== 'applyLang') ? t('applyLang') : 'Bahasa') + ': ' + label);
+    } catch(e4) {}
+    try {
+      var cur = document.getElementById('vanLangCurrent');
+      if (cur) cur.textContent = (VAN_LANGS[code].label || code) + ' (' + code.toUpperCase() + ')';
+    } catch(e5) {}
+  } catch(e) {}
 }
-function previewVanLang(code){}
-function applyPendingVanLang(){}
-
-
 function previewVanLang(code){
   try {
     if (!code || !VAN_LANGS[code]) return;
@@ -5024,41 +4767,10 @@ function applyVanLang(){
   try { fillLangSelect(); } catch(e) {}
 }
 
-
-(function(){
-  var S = {
-    id: { staffDesc:'Roster tim: siapa kerja apa, shift, dan kontak cepat. Bukan absensi GPS — fokus operasional harian.', addStaff:'Tambah karyawan', editStaff:'Edit karyawan', fullName:'Nama lengkap', shiftHint:'Jam shift (08-16 / 14:00-22:00)', noBiz:'Tanpa usaha khusus', total:'Total', saveActiveBiz:'Simpan usaha aktif', waPhone:'No. WA (08... / 62...)' },
-    en: { staffDesc:'Team roster: who works which shift, quick contacts. Not GPS attendance — daily ops.', addStaff:'Add staff', editStaff:'Edit staff', fullName:'Full name', shiftHint:'Shift hours (08-16 / 14:00-22:00)', noBiz:'No specific business', total:'Total', saveActiveBiz:'Save active business', waPhone:'WhatsApp (08... / 62...)' },
-    de: { staffDesc:'Team-Roster: wer welche Schicht arbeitet. Kein GPS-Stempel — Tagesbetrieb.', addStaff:'Mitarbeiter hinzufügen', editStaff:'Bearbeiten', fullName:'Vollständiger Name', shiftHint:'Schicht (08-16 / 14:00-22:00)', noBiz:'Kein bestimmtes Geschäft', total:'Gesamt', saveActiveBiz:'Aktives Geschäft speichern', waPhone:'WhatsApp-Nr.' },
-    zh: { staffDesc:'团队排班与联系方式。非GPS考勤，聚焦日常运营。', addStaff:'添加员工', editStaff:'编辑员工', fullName:'全名', shiftHint:'班次 (08-16 / 14:00-22:00)', noBiz:'无指定业务', total:'总计', saveActiveBiz:'保存当前业务', waPhone:'WhatsApp' },
-    ja: { staffDesc:'シフトと連絡先の名簿。GPS勤怠ではなく日次運用向け。', addStaff:'スタッフ追加', editStaff:'編集', fullName:'氏名', shiftHint:'シフト (08-16 / 14:00-22:00)', noBiz:'特定事業なし', total:'合計', saveActiveBiz:'アクティブ事業を保存', waPhone:'WhatsApp' },
-    ko: { staffDesc:'근무 시프트와 연락처. GPS 출퇴근이 아닌 일상 운영용.', addStaff:'직원 추가', editStaff:'수정', fullName:'이름', shiftHint:'근무 시간 (08-16 / 14:00-22:00)', noBiz:'특정 사업 없음', total:'합계', saveActiveBiz:'활성 사업 저장', waPhone:'WhatsApp' },
-    th: { staffDesc:'รายชื่อกะงานและติดต่อด่วน ไม่ใช่ระบบ GPS', addStaff:'เพิ่มพนักงาน', editStaff:'แก้ไข', fullName:'ชื่อเต็ม', shiftHint:'เวลากะ (08-16 / 14:00-22:00)', noBiz:'ไม่ระบุธุรกิจ', total:'ทั้งหมด', saveActiveBiz:'บันทึกธุรกิจที่ใช้งาน', waPhone:'WhatsApp' },
-    ar: { staffDesc:'قائمة الورديات وجهات الاتصال. ليس حضور GPS.', addStaff:'إضافة موظف', editStaff:'تعديل', fullName:'الاسم الكامل', shiftHint:'الوردية (08-16 / 14:00-22:00)', noBiz:'بدون عمل محدد', total:'الإجمالي', saveActiveBiz:'حفظ العمل النشط', waPhone:'واتساب' },
-    es: { staffDesc:'Turnos del equipo y contactos. No es asistencia GPS.', addStaff:'Añadir personal', editStaff:'Editar', fullName:'Nombre completo', shiftHint:'Horario (08-16 / 14:00-22:00)', noBiz:'Sin negocio específico', total:'Total', saveActiveBiz:'Guardar negocio activo', waPhone:'WhatsApp' },
-    fr: { staffDesc:'Planning équipe et contacts. Pas de pointage GPS.', addStaff:'Ajouter un employé', editStaff:'Modifier', fullName:'Nom complet', shiftHint:'Horaires (08-16 / 14:00-22:00)', noBiz:'Sans entreprise', total:'Total', saveActiveBiz:'Enregistrer entreprise active', waPhone:'WhatsApp' },
-    pt: { staffDesc:'Escala e contatos da equipe. Não é ponto GPS.', addStaff:'Adicionar funcionário', editStaff:'Editar', fullName:'Nome completo', shiftHint:'Horário (08-16 / 14:00-22:00)', noBiz:'Sem negócio específico', total:'Total', saveActiveBiz:'Salvar negócio ativo', waPhone:'WhatsApp' },
-    vi: { staffDesc:'Ca làm và liên hệ nhanh. Không chấm công GPS.', addStaff:'Thêm nhân viên', editStaff:'Sửa', fullName:'Họ tên', shiftHint:'Giờ ca (08-16 / 14:00-22:00)', noBiz:'Không gắn DN', total:'Tổng', saveActiveBiz:'Lưu DN đang chọn', waPhone:'WhatsApp' },
-    ms: { staffDesc:'Syif pasukan dan kontak pantas. Bukan absen GPS.', addStaff:'Tambah pekerja', editStaff:'Edit', fullName:'Nama penuh', shiftHint:'Waktu syif (08-16 / 14:00-22:00)', noBiz:'Tiada perniagaan khusus', total:'Jumlah', saveActiveBiz:'Simpan perniagaan aktif', waPhone:'WhatsApp' },
-    hi: { staffDesc:'शिफ्ट और संपर्क। GPS उपस्थिति नहीं।', addStaff:'कर्मचारी जोड़ें', editStaff:'संपादित', fullName:'पूरा नाम', shiftHint:'शिफ्ट (08-16 / 14:00-22:00)', noBiz:'कोई विशेष व्यवसाय नहीं', total:'कुल', saveActiveBiz:'सक्रिय व्यवसाय सहेजें', waPhone:'WhatsApp' },
-    tr: { staffDesc:'Vardiya ve iletişim. GPS yoklama değil.', addStaff:'Personel ekle', editStaff:'Düzenle', fullName:'Tam ad', shiftHint:'Vardiya (08-16 / 14:00-22:00)', noBiz:'Belirli işletme yok', total:'Toplam', saveActiveBiz:'Aktif işletmeyi kaydet', waPhone:'WhatsApp' },
-    ru: { staffDesc:'Смены и контакты. Не GPS-учёт.', addStaff:'Добавить сотрудника', editStaff:'Изменить', fullName:'Полное имя', shiftHint:'Смена (08-16 / 14:00-22:00)', noBiz:'Без привязки', total:'Всего', saveActiveBiz:'Сохранить активный бизнес', waPhone:'WhatsApp' }
-  };
-  try {
-    Object.keys(VAN_LANGS||{}).forEach(function(code){
-      if (!VAN_I18N[code]) VAN_I18N[code] = {};
-      var src = S[code] || S.en;
-      Object.keys(S.en).forEach(function(k){ VAN_I18N[code][k] = (src && src[k]) || S.en[k]; });
-    });
-  } catch(e) {}
-})();
-
 window.getVanLang = getVanLang;
 
 (function(){
   function bootVan(){
-    try { localStorage.setItem('van_lang', 'id'); } catch(e) {}
-
     try { applyVanLang(); } catch(e) {}
     try { fillLangSelect(); } catch(e) {}
     // tutup overlay yang bisa blok klik
@@ -5359,8 +5071,32 @@ function extractVideoFrames(videoUrl, count){
     } catch(e) { resolve([]); }
   });
 }
+async function callBackendVision(userText, imageUrls, signal){
+  var headers = { 'Content-Type': 'application/json' };
+  try {
+    if (!vanToken) vanToken = localStorage.getItem('van_token');
+    if (vanToken) headers['Authorization'] = 'Bearer ' + vanToken;
+  } catch(e) {}
+  var res = await fetch(VAN_API + '/api/vision', {
+    method: 'POST', mode: 'cors', headers: headers, signal: signal,
+    body: JSON.stringify({ prompt: userText || 'Jelaskan gambar ini', images: imageUrls || [] })
+  });
+  var data = await res.json().catch(function(){ return {}; });
+  if (!res.ok) throw new Error((data && data.error) || ('Backend vision HTTP ' + res.status));
+  var content = String(data.reply || data.content || data.message || '').replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+  if (!content) throw new Error('Backend vision mengembalikan jawaban kosong');
+  return content;
+}
+
 async function callVisionAI(userText, imageUrls, signal){
   if (!imageUrls || !imageUrls.length) throw new Error('Tidak ada gambar. Upload foto dulu.');
+  if (backendOk && VAN_API) {
+    try { return await callBackendVision(userText, imageUrls, signal); }
+    catch (e) { if (e && e.name === 'AbortError') throw e; console.warn('Backend vision gagal, coba fallback lokal', e); }
+  }
+  if (!getGroqKey() || String(getGroqKey()).indexOf('YOUR_') >= 0) {
+    throw new Error('AI belum terhubung. Hubungkan backend Van terlebih dahulu.');
+  }
 
   // Kompres agresif: HP + content:// sering gagal jika body terlalu besar
   async function prepOne(u, side, qual){
@@ -5383,7 +5119,7 @@ async function callVisionAI(userText, imageUrls, signal){
 
   var models = (typeof GROQ_VISION_MODELS !== 'undefined' && GROQ_VISION_MODELS.length)
     ? GROQ_VISION_MODELS
-    : ['qwen/qwen3.6-27b', 'meta-llama/llama-4-scout-17b-16e-instruct'];
+    : ['qwen/qwen3.6-27b','qwen/qwen3.8-27b'];
 
   var attempts = [
     { side: 768, qual: 0.55, n: 1 },
@@ -5472,9 +5208,9 @@ async function callVanAI(messages, signal){
     throw new Error('AI belum terhubung. Jalankan server Van atau set kunci di Pengaturan.');
   }
   var tryModels = [
-    (typeof GROQ_MODEL_FALLBACK !== 'undefined' && GROQ_MODEL_FALLBACK) || 'llama-3.3-70b-versatile',
-    'llama-3.3-70b-versatile',
-    'llama-3.1-8b-instant',
+    (typeof GROQ_MODEL_FALLBACK !== 'undefined' && GROQ_MODEL_FALLBACK) || 'qwen/qwen3.6-27b',
+    'qwen/qwen3.6-27b',
+    'openai/gpt-oss-20b',
     (typeof GROQ_MODEL !== 'undefined' && GROQ_MODEL) || ''
   ];
   var seen = {};
@@ -6351,7 +6087,7 @@ try {
 } catch (e) {}
 var __socialFilter = 'all';
 var SOCIAL_TAGS = [
-  { id: 'all', name: (typeof t==='function'?t('all'):'Semua') },
+  { id: 'all', name: 'Semua' },
   { id: 'omzet', name: 'Omzet' },
   { id: 'operasional', name: 'Operasional' },
   { id: 'qc', name: 'QC' },
@@ -8257,7 +7993,7 @@ function _renderSchoolPageInner(el){
 
     if (!__libraryBook) {
       var sectorFilters = [
-        ['semua',(typeof t==='function'?t('all'):'Semua')],['umkm','UMKM'],['bisnis','Bisnis'],['qc','QC'],['retail','Retail'],
+        ['semua','Semua'],['umkm','UMKM'],['bisnis','Bisnis'],['qc','QC'],['retail','Retail'],
         ['keuangan','Keuangan'],['operasional','Operasional'],['fnb','F&B'],['jasa','Jasa'],['leadership','Leadership']
       ];
       var statusFilters = [
@@ -9260,10 +8996,10 @@ function renderPage(page){
   if(page==='memory'){
     el.innerHTML=`<div style="max-width:640px;margin:0 auto;padding:16px 16px 100px">
       <h2 style="font-size:20px;margin-bottom:6px">${typeof t==='function'?t('memory'):'Memori bisnis'}</h2>
-      <p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">${typeof t==='function'?t('memoryDesc'):'Profil usaha yang dipakai Van di chat, Pulse, stok, dan keuangan.'}</p>
-      <p class="learn-sec">${typeof t==='function'?t('memory'):'Memori bisnis'}</p>
+      <p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">Profil usaha yang dipakai Van di chat, Pulse, stok, dan keuangan. Data tersimpan di perangkat ini.</p>
+      <p class="learn-sec">Memori bisnis</p>
       <div class="card">
-        <label style="font-size:12px;color:var(--dim)">${typeof t==='function'?t('bizName'):'Nama usaha'}</label>
+        <label style="font-size:12px;color:var(--dim)">Jenis / nama bisnis</label>
         <input id="memBisnis" value="${memory.bisnis||''}" placeholder="Contoh: toko fashion online" style="width:100%;margin:6px 0 12px;padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">
         <label style="font-size:12px;color:var(--dim)">Platform</label>
         <input id="memPlatform" value="${memory.platform||''}" placeholder="Shopee / TikTok / offline" style="width:100%;margin:6px 0 12px;padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">
@@ -9398,7 +9134,7 @@ function renderPage(page){
         try {
           if (!('Notification' in window)) return '';
           if (Notification.permission === 'granted') {
-            return '<div class="card" style="margin-bottom:10px;padding:10px 12px;font-size:12.5px;color:#34d399">'+(typeof t==='function'?t('crmNotifOn'):'Notifikasi CRM aktif')+'</div>';
+            return '<div class="card" style="margin-bottom:10px;padding:10px 12px;font-size:12.5px;color:#34d399">Notifikasi CRM aktif · follow-up jatuh tempo akan diingatkan.</div>';
           }
           return '<div class="card" style="margin-bottom:10px;padding:10px 12px"><div style="font-size:12.5px;color:var(--muted);margin-bottom:8px">Aktifkan notifikasi agar follow-up tidak terlewat.</div>' +
             '<button type="button" class="btn" style="width:100%;padding:10px;font-size:13px" onclick="enableNotif()">Aktifkan notifikasi CRM</button></div>';
@@ -9473,7 +9209,7 @@ function renderPage(page){
           '<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">' +
             (x.phone?'<button type="button" class="btn" style="padding:6px 12px;font-size:12px" onclick="openCrmWA('+i+')">Chat WA</button>':'') +
             '<button type="button" class="act" onclick="crmFollow('+i+')">'+t('followTomorrow')+'</button>' +
-            '<button type="button" class="act" onclick="delCrmItem('+i+')">'+(typeof t==='function'?t('delete'):'Hapus')+'</button>' +
+            '<button type="button" class="act" onclick="delCrmItem('+i+')">Hapus</button>' +
           '</div></div>';
       }).join('') || '<div class="card" style="color:var(--dim)">'+t('noCustomers')+'</div>') +
       '<button type="button" class="btn-outline" style="width:100%;margin-top:10px" onclick="setStockTab(\'jual\')">'+t('recordSaleBuyer')+'</button>' +
@@ -9750,6 +9486,17 @@ function renderPage(page){
         <button class="btn" onclick="saveProfile()">${typeof t==='function'?t('saveProfile'):'Simpan profil'}</button>
         <button class="btn-outline" style="margin-top:8px" onclick="changePassword()">${typeof t==='function'?t('changePassword'):'Ubah password'}</button>
       </div>
+      <div class="card" id="vanLangCard">
+        <div style="font-weight:600;margin-bottom:6px" id="vanLangTitle">Bahasa / Language</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:8px" id="vanLangDesc">Pilih bahasa antarmuka & jawaban AI. Berlaku di perangkat ini.</p>
+        <div style="font-size:12.5px;color:var(--dim);margin-bottom:10px">${typeof t==='function'?t('currentLang'):'Bahasa aktif'}: <strong id="vanLangCurrent" style="color:var(--accent)">—</strong></div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">1. ${typeof t==='function'?t('selectLang'):'Pilih bahasa'}</div>
+        <div id="vanLangGrid" class="van-lang-grid"></div>
+        <select id="vanLangSelect" onchange="previewVanLang(this.value)" style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--bg3);color:var(--text);font-size:14px;margin:12px 0 8px"></select>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:8px">${typeof t==='function'?t('selectLang'):'Dipilih'}: <strong id="vanLangPending" style="color:var(--text)">—</strong></div>
+        <button type="button" class="btn" style="width:100%;margin-bottom:8px" id="vanLangApplyBtn" onclick="applyPendingVanLang()">${typeof t==='function'?t('applyLang'):'Terapkan bahasa'}</button>
+        <p style="font-size:11.5px;color:var(--dim);margin:0" id="vanLangHint"></p>
+      </div>
       <div class="card" id="vanAiCard">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
           <div style="font-weight:600">${typeof t==='function'?t('aiConnection'):'Koneksi AI'}</div>
@@ -9901,11 +9648,11 @@ function renderPage(page){
     }
     var filtered = fin.items.map(function(x,i){ return {x:x, i:i}; }).filter(function(row){ return inFilter(row.x); }).reverse();
         var filterChips = [
-      ['all', (typeof t==='function'&&t('allFilter'))||(typeof t==='function'?t('all'):'Semua')],
-      ['day', (typeof t==='function'&&(t('periodDay')||t('today')))||'Hari ini'],
-      ['week', (typeof t==='function'&&(t('periodWeek')||t('thisWeek')))||'Minggu ini'],
-      ['month', (typeof t==='function'&&(t('periodMonth')||t('thisMonth')))||'Bulan ini'],
-      ['year', (typeof t==='function'&&(t('periodYear')||t('thisYear')))||'Tahun ini']
+      ['all', (typeof t==='function'&&t('allFilter'))||'Semua'],
+      ['day', (typeof t==='function'&&t('periodDay'))||'Hari ini'],
+      ['week', (typeof t==='function'&&t('periodWeek'))||'Minggu ini'],
+      ['month', (typeof t==='function'&&t('periodMonth'))||'Bulan ini'],
+      ['year', (typeof t==='function'&&t('periodYear'))||'Tahun ini']
     ].map(function(f){
       var on = __finFilter === f[0];
       return '<button type="button" class="'+(on?'btn':'btn-outline')+'" style="padding:6px 12px;font-size:12px;border-radius:20px" onclick="setFinFilter(\''+f[0]+'\')">'+f[1]+'</button>';
@@ -9928,21 +9675,9 @@ function renderPage(page){
     var dayList = (typeof listFinanceDays === 'function') ? listFinanceDays(21) : [];
     var pastDaysHtml = dayList.length ? dayList.map(function(d){
       var active = (window.__finDayKey === d.key && __finFilter === 'daypick');
-      var expNotes = [], inNotes = [];
-      try {
-        (d.items || []).forEach(function(x){
-          var lab = x.label || x.cat || x.type || '';
-          var a = Number(x.amount || 0);
-          if (x.type === 'expense' && expNotes.length < 3) expNotes.push(lab + ' ' + fmtRp(a));
-          if ((x.type === 'income' || x.type === 'passive') && inNotes.length < 3) inNotes.push(lab + ' ' + fmtRp(a));
-        });
-      } catch(e) {}
-      var detailLine = '';
-      if (inNotes.length) detailLine += '<div style="font-size:10.5px;color:var(--accent);margin-top:3px">Masuk: ' + inNotes.join(' · ') + '</div>';
-      if (expNotes.length) detailLine += '<div style="font-size:10.5px;color:#f87171;margin-top:2px">Keluar: ' + expNotes.join(' · ') + '</div>';
-      return '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:8px 0;border-bottom:1px solid var(--border)">' +
+      return '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border)">' +
         '<button type="button" class="'+(active?'btn':'btn-outline')+'" style="flex:1;text-align:left;padding:8px 10px;font-size:12.5px" onclick="setFinDayFilter(\''+d.key+'\')">' +
-          '<strong>'+d.key+'</strong> · '+d.count+' trx<br><span style="color:var(--dim);font-size:11px">Masuk '+fmtRp((d.income||0)+(d.passive||0))+' · Keluar '+fmtRp(d.expense||0)+' · Net '+fmtRp(d.net||0)+'</span>'+detailLine+'</button>' +
+          '<strong>'+d.key+'</strong> · '+d.count+' trx<br><span style="color:var(--dim);font-size:11px">Masuk '+fmtRp(d.income+d.passive)+' · Keluar '+fmtRp(d.expense)+' · Net '+fmtRp(d.net)+'</span></button>' +
         '<button type="button" class="act" style="flex-shrink:0" onclick="exportFinanceDay(\''+d.key+'\')">CSV</button></div>';
     }).join('') : '<div style="font-size:12.5px;color:var(--dim)">Belum ada transaksi tertanggal. Catat uang masuk/keluar di bawah.</div>';
 
@@ -9954,25 +9689,14 @@ function renderPage(page){
     var formCancel = editing ? '<button type="button" class="btn-outline" style="width:100%;margin-top:8px" onclick="cancelFinEdit()">Batal edit</button>' : '';
     var topCats = finTopCategories(fin.items);
     var topCatsHtml = topCats.length
-      ? '<div class="card" style="margin-bottom:10px"><div style="font-weight:600;margin-bottom:8px;font-size:13.5px">Pengeluaran tertinggi menurut kategori</div>' +
+      ? '<div class="card" style="margin-bottom:10px"><div style="font-weight:600;margin-bottom:8px;font-size:13.5px">Pengeluaran terbesar (kategori)</div>' +
         topCats.map(function(c){
-          var itemsLine = '';
-          if (c.items && c.items.length) {
-            itemsLine = '<div style="font-size:11.5px;color:var(--dim);margin-top:3px;line-height:1.4">' +
-              c.items.slice(0,4).map(function(it){
-                return (it.name||'—') + ' (' + fmtRp(it.total) + ')';
-              }).join(' · ') +
-              (c.items.length > 4 ? ' · +' + (c.items.length-4) + ' lainnya' : '') +
-            '</div>';
-          }
-          return '<div style="padding:8px 0;border-bottom:1px solid var(--border)">' +
-            '<div style="display:flex;justify-content:space-between;font-size:13px;gap:8px"><span style="color:var(--text);font-weight:600">'+c.name+'</span><strong style="color:#f87171">'+fmtRp(c.total)+'</strong></div>' +
-            itemsLine + '</div>';
+          return '<div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span style="color:var(--muted)">'+c.name+'</span><strong>'+fmtRp(c.total)+'</strong></div>';
         }).join('') + '</div>'
       : '';
     el.innerHTML = `<div style="max-width:640px;margin:0 auto;padding:16px 16px 100px">
       <h2 style="font-size:20px;margin-bottom:4px">${typeof t==='function'?t('financeTitle'):'Keuangan Usaha'}</h2>
-      <p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">${typeof t==='function'?t('financeDesc'):'Catat pemasukan & pengeluaran.'}</p>
+      <p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">Catat pemasukan & pengeluaran. Data di perangkat, terhubung ke Revenue Pulse.</p>
       <div class="stat-grid">
         <div class="stat"><div class="l">${typeof t==='function'?t('totalIncome'):'Total Income'}</div><div class="v">${fmtRp(income)}</div></div>
         <div class="stat"><div class="l">${typeof t==='function'?t('totalExpense'):'Total Expense'}</div><div class="v">${fmtRp(expense)}</div></div>
@@ -9980,7 +9704,7 @@ function renderPage(page){
         <div class="stat"><div class="l">Net</div><div class="v" style="color:${net>=0?'var(--accent)':'#f87171'}">${fmtRp(net)}</div></div>
       </div>
       <div class="card" style="margin-bottom:10px">
-        <div style="font-weight:600;margin-bottom:6px;font-size:13.5px">${typeof t==='function'?t('trend4w'):'Tren 4 minggu'}</div>
+        <div style="font-weight:600;margin-bottom:6px;font-size:13.5px">Tren 4 minggu</div>
         <div style="display:flex;gap:6px;align-items:flex-end;margin-bottom:8px">${trendHtml}</div>
         <div style="font-size:11px;color:var(--dim)">Hijau = masuk · Merah = keluar · label M = minggu</div>
       </div>
@@ -10039,7 +9763,7 @@ function renderPage(page){
         ${window.__finDayKey && __finFilter==='daypick' ? '<button type="button" class="btn-outline" style="width:100%;margin-top:8px" onclick="window.__finDayKey=\'\';__finFilter=\'all\';goPage(\'finance\')">Tampilkan semua tanggal</button>' : ''}
       </div>
       <div class="card" style="margin-bottom:10px">
-        <div style="font-weight:600;margin-bottom:6px;font-size:13.5px">${typeof t==='function'?t('periodSummary'):'Ringkasan periode'}</div>
+        <div style="font-weight:600;margin-bottom:6px;font-size:13.5px">Ringkasan periode</div>
         <div style="font-size:13px;color:var(--muted);line-height:1.55">
           Masuk <strong style="color:var(--text)">${fmtRp(periodSnap.income)}</strong>
           · SKU <strong style="color:var(--text)">${fmtRp(periodSnap.salesSku)}</strong>
@@ -10070,28 +9794,33 @@ function renderPage(page){
       <button class="btn" style="width:100%;margin-top:10px" onclick="setStockTab('lapor')">${typeof t==='function'?t('openFinanceReport'):'Buka laporan keuangan & omzet'}</button>
       <div class="card" style="margin-top:10px">
         <div style="font-weight:600;margin-bottom:6px;font-size:13.5px">Unduh laporan per periode</div>
-        <p style="font-size:12px;color:var(--dim);line-height:1.45;margin:0 0 12px">Pilih periode. CSV = daftar transaksi detail (pemasukan &amp; pengeluaran). Excel = ringkasan + detail lengkap.</p>
+        <p style="font-size:12px;color:var(--dim);line-height:1.45;margin:0 0 12px">Pilih periode, lalu format file. CSV = daftar transaksi; TXT/JSON = ringkasan angka.</p>
         <div style="font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px">Harian</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
-          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('day','csv')">CSV</button>
-          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('day','xls')">Excel</button>
+          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('day','txt')">TXT</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('day','csv')">CSV</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('day','json')">JSON</button>
         </div>
         <div style="font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px">Mingguan</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
-          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('week','csv')">CSV</button>
-          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('week','xls')">Excel</button>
+          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('week','txt')">TXT</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('week','csv')">CSV</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('week','json')">JSON</button>
         </div>
         <div style="font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px">Bulanan</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
-          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('month','csv')">CSV</button>
-          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('month','xls')">Excel</button>
+          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('month','txt')">TXT</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('month','csv')">CSV</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('month','json')">JSON</button>
         </div>
         <div style="font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px">Tahunan</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
-          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('year','csv')">CSV</button>
-          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('year','xls')">Excel</button>
+          <button type="button" class="btn" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('year','txt')">TXT</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('year','csv')">CSV</button>
+          <button type="button" class="btn-outline" style="flex:1;min-width:90px;padding:10px;font-size:12px" onclick="exportPeriodReport('year','json')">JSON</button>
         </div>
-        <button type="button" class="btn-outline" style="width:100%" onclick="exportAllPeriodsBundle()">Unduh gabungan 4 periode (Excel)</button>
+        <button type="button" class="btn-outline" style="width:100%;margin-bottom:8px" onclick="exportAllPeriodsBundle()">Unduh ringkasan 4 periode (JSON)</button>
+        <button type="button" class="btn-outline" style="width:100%" onclick="exportAllSavedReports()">Export semua laporan tersimpan</button>
       </div>
       <button class="btn-outline" style="width:100%;margin-top:8px" onclick="goPage('pulse')">Lihat dampak di Revenue Pulse</button>
       <button class="btn-outline" style="width:100%;margin-top:8px" onclick="if(confirm('Hapus semua data keuangan?')){localStorage.removeItem('van_finance');__finEditIdx=-1;goPage('finance')}">Reset data keuangan</button>
@@ -10122,7 +9851,7 @@ function renderPage(page){
       return true;
     });
     const chips = [
-      ['all', (typeof t==='function'?t('all'):'Semua')],
+      ['all', 'Semua'],
       ['open', 'Aktif'],
       ['done', 'Selesai']
     ].map(function(f){
@@ -10185,6 +9914,7 @@ function renderPage(page){
       if (x.bizId == null) x.bizId = '';
     });
     try { saveStock(stock); } catch(e) {}
+
     var bizList = [];
     try { bizList = (typeof businesses === 'function') ? businesses() : []; } catch(e) { bizList = []; }
     var filter = __stockBiz || 'all';
@@ -10194,10 +9924,7 @@ function renderPage(page){
       return String(r.x.bizId) === String(filter);
     });
     if (__stockFilter === 'low') {
-      filtered = filtered.filter(function(r){
-        var min = Number(r.x.min || 0);
-        return min > 0 ? Number(r.x.qty||0) <= min : Number(r.x.qty||0) <= 0;
-      });
+      filtered = filtered.filter(function(r){ return Number(r.x.qty) <= Number(r.x.min || 0); });
     } else if (__stockFilter === 'ok') {
       filtered = filtered.filter(function(r){ return Number(r.x.qty) > Number(r.x.min || 0); });
     }
@@ -10245,23 +9972,20 @@ function renderPage(page){
           '<button type="button" class="biz-tab on" onclick="setStockTab(\'lapor\')">'+t('reportTab')+'</button>' +
         '</div>' +
         '<div class="stat-grid" style="grid-template-columns:1fr 1fr">' +
-          '<div class="stat"><div class="l">Omzet dari stok (SKU)</div><div class="v" style="font-size:15px;color:var(--accent)">'+fmtRp(report.stockOmzet||0)+'</div></div>' +
-          '<div class="stat"><div class="l">Penjualan di Keuangan</div><div class="v" style="font-size:15px;color:var(--accent)">'+fmtRp(report.salesAll||0)+'</div></div>' +
+          '<div class="stat"><div class="l">Omzet SKU (stok)</div><div class="v" style="font-size:15px;color:var(--accent)">'+fmtRp(report.stockOmzet||0)+'</div></div>' +
+          '<div class="stat"><div class="l">Omzet di Keuangan</div><div class="v" style="font-size:15px;color:var(--accent)">'+fmtRp(report.salesAll||0)+'</div></div>' +
           '<div class="stat"><div class="l">Hari ini</div><div class="v" style="font-size:15px">'+fmtRp(report.salesToday||0)+'</div></div>' +
           '<div class="stat"><div class="l">7 hari</div><div class="v" style="font-size:15px">'+fmtRp(report.salesWeek||0)+'</div></div>' +
           '<div class="stat"><div class="l">Bulan ini</div><div class="v" style="font-size:15px">'+fmtRp(report.salesMonth||0)+'</div></div>' +
           '<div class="stat"><div class="l">Laba / rugi</div><div class="v" style="font-size:15px;color:'+((report.net||0)>=0?'var(--accent)':'#f87171')+'">'+fmtRp(report.net||0)+'</div></div>' +
         '</div>' +
-        '<div class="card"><div style="font-weight:600;margin-bottom:6px">Ringkasan keuangan terhubung</div>' +
-          '<p style="font-size:12px;color:var(--dim);margin:0 0 10px;line-height:1.45">Data dari modul Keuangan untuk usaha yang sama. Bandingkan dengan omzet SKU di atas.</p>' +
-          '<div style="font-size:13px;line-height:1.75;color:var(--muted)">' +
-            '<div style="display:flex;justify-content:space-between;gap:8px"><span>Total pemasukan</span><strong style="color:var(--text)">'+fmtRp(report.income||0)+'</strong></div>' +
-            '<div style="display:flex;justify-content:space-between;gap:8px"><span>Pendapatan passive</span><strong style="color:var(--text)">'+fmtRp(report.passive||0)+'</strong></div>' +
-            '<div style="display:flex;justify-content:space-between;gap:8px"><span>Total pengeluaran</span><strong style="color:#f87171">'+fmtRp(report.expense||0)+'</strong></div>' +
-            '<div style="display:flex;justify-content:space-between;gap:8px;padding-top:6px;border-top:1px solid var(--border);margin-top:4px"><span>Net (laba/rugi)</span><strong style="color:'+((report.net||0)>=0?'var(--accent)':'#f87171')+'">'+fmtRp(report.net||0)+'</strong></div>' +
-            '<div style="margin-top:8px;font-size:12px;color:var(--dim)">SKU terjual: <strong style="color:var(--text)">'+(report.stockSold||0)+'</strong> unit · Produk beromzet: <strong style="color:var(--text)">'+(report.skuLaku||0)+'</strong>/'+(report.skuAll||0)+'</div>' +
-            '<div style="font-size:12px;color:var(--dim);margin-top:4px">7 hari: masuk '+fmtRp(report.weekIn||0)+' · keluar '+fmtRp(report.weekEx||0)+'</div>' +
-            '<div style="font-size:12px;color:var(--dim)">Bulan ini: masuk '+fmtRp(report.monthIn||0)+' · keluar '+fmtRp(report.monthEx||0)+'</div>' +
+        '<div class="card"><div style="font-weight:600;margin-bottom:8px">Laporan keuangan</div>' +
+          '<div style="font-size:13px;line-height:1.7;color:var(--muted)">' +
+            '<div>Pemasukan: <strong style="color:var(--text)">'+fmtRp(report.income||0)+'</strong></div>' +
+            '<div>Passive: <strong style="color:var(--text)">'+fmtRp(report.passive||0)+'</strong></div>' +
+            '<div>Pengeluaran: <strong style="color:var(--text)">'+fmtRp(report.expense||0)+'</strong></div>' +
+            '<div>Minggu ini: masuk <strong style="color:var(--text)">'+fmtRp(report.weekIn||0)+'</strong> · keluar '+fmtRp(report.weekEx||0)+'</div>' +
+            '<div>Bulan ini: masuk <strong style="color:var(--text)">'+fmtRp(report.monthIn||0)+'</strong> · keluar '+fmtRp(report.monthEx||0)+'</div>' +
           '</div></div>';
       var gap = Number(report.stockOmzet||0) - Number(report.salesAll||0);
       html += '<div class="card"><div style="font-weight:600;margin-bottom:6px">Integrasi Stok ↔ Keuangan</div>' +
@@ -10273,96 +9997,34 @@ function renderPage(page){
               : 'catatan di Keuangan lebih besar dari omzet SKU. Ada transaksi manual di luar tombol Jual.'))) +
         '</p></div>';
       if ((report.topSku||[]).length) {
-        html += '<p class="learn-sec">Peringkat omzet produk (SKU)</p>';
-        html += '<p style="font-size:12px;color:var(--dim);margin:-4px 0 10px;line-height:1.45">Diurutkan dari pendapatan penjualan tertinggi. Termasuk unit terjual dan sisa stok.</p>';
+        html += '<p class="learn-sec">Ringkasan omzet SKU</p>';
         report.topSku.forEach(function(x, idx){
-          var sold = Number(x.sold||0);
-          var rev = Number(x.revenue||0);
-          var avg = sold > 0 ? Math.round(rev / sold) : 0;
-          var disp = Number(x.qty != null ? x.qty : x.display || 0);
-          var gudang = Number(x.warehouse != null ? x.warehouse : x.gudang || 0);
-          html += '<div class="card" style="margin-bottom:8px;padding:12px">' +
-            '<div style="display:flex;justify-content:space-between;gap:8px">' +
-              '<div style="min-width:0"><span style="color:var(--dim);font-size:11px">#'+(idx+1)+'</span> <strong style="font-size:13.5px">'+(x.name||'Item')+'</strong>' +
-              '<div style="font-size:11.5px;color:var(--dim);margin-top:4px;line-height:1.45">' +
-                'Terjual <strong style="color:var(--text)">'+sold+'</strong> unit' +
-                (avg ? ' · Rata-rata '+fmtRp(avg)+'/unit' : '') +
-                '<br>Sisa display: '+disp+(gudang ? ' · Gudang: '+gudang : '') +
-                (x.unit ? ' · Satuan: '+x.unit : '') +
-              '</div></div>' +
-              '<div style="text-align:right;flex-shrink:0"><div style="font-weight:700;color:var(--accent);white-space:nowrap">'+fmtRp(rev)+'</div>' +
-              '<div style="font-size:10.5px;color:var(--dim);margin-top:2px">omzet</div></div></div></div>';
+          html += '<div class="card" style="margin-bottom:8px;padding:12px"><div style="display:flex;justify-content:space-between;gap:8px">' +
+            '<div><span style="color:var(--dim);font-size:12px">#'+(idx+1)+'</span> <strong>'+(x.name||'Item')+'</strong>' +
+            '<div style="font-size:12px;color:var(--dim);margin-top:2px">'+Number(x.sold||0)+' unit · sisa display '+(x.qty||0)+'</div></div>' +
+            '<div style="font-weight:700;color:var(--accent);white-space:nowrap">'+fmtRp(x.revenue||0)+'</div></div></div>';
         });
       } else {
         html += '<div class="card" style="color:var(--dim)">Belum ada omzet SKU. Jual dari tab Penjualan.</div>';
       }
       if ((report.topExp||[]).length) {
-        html += '<p class="learn-sec">Pengeluaran tertinggi menurut kategori</p>';
-        html += '<p style="font-size:12px;color:var(--dim);margin:-4px 0 10px;line-height:1.45">Peringkat kategori biaya dari data keuangan (bukan harga pokok stok). Gunakan untuk meninjau alokasi kas.</p>';
-        var expSum = 0;
-        report.topExp.forEach(function(x){ expSum += Number(x.total||0); });
-        report.topExp.forEach(function(x, idx){
-          var pct = expSum > 0 ? Math.round(Number(x.total||0) / expSum * 100) : 0;
-          var namesHtml = '';
-          var itemList = x.items || [];
-          if (itemList.length) {
-            namesHtml = '<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">';
-            namesHtml += '<div style="font-size:11px;color:var(--dim);margin-bottom:4px">Barang / keterangan tercatat:</div>';
-            itemList.slice(0, 6).forEach(function(it){
-              namesHtml += '<div style="display:flex;justify-content:space-between;gap:8px;font-size:12.5px;padding:3px 0">' +
-                '<span style="color:var(--text);min-width:0;overflow:hidden;text-overflow:ellipsis">'+(it.name||'—')+(it.count>1?' <span style="color:var(--dim)">×'+it.count+'</span>':'')+'</span>' +
-                '<span style="color:#f87171;flex-shrink:0">'+fmtRp(it.total)+'</span></div>';
-            });
-            if (itemList.length > 6) namesHtml += '<div style="font-size:11px;color:var(--dim);margin-top:2px">+'+ (itemList.length-6) +' item lainnya</div>';
-            namesHtml += '</div>';
-          } else if ((x.itemNames||[]).length) {
-            namesHtml = '<div style="font-size:12px;color:var(--text);margin-top:6px;line-height:1.45">'+(x.itemNames.slice(0,6).join(' · '))+'</div>';
-          }
-          html += '<div class="card" style="margin-bottom:8px;padding:12px">' +
-            '<div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start">' +
-              '<div style="min-width:0"><span style="color:var(--dim);font-size:11px">#'+(idx+1)+'</span> <strong style="font-size:13.5px">'+(x.name||x.id||'Kategori')+'</strong>' +
-              '<div style="font-size:11.5px;color:var(--dim);margin-top:3px">Kontribusi '+pct+'% · '+(itemList.length||(x.itemNames||[]).length||0)+' jenis tercatat</div></div>' +
-              '<strong style="color:#f87171;white-space:nowrap">'+fmtRp(x.total)+'</strong></div>' +
-            '<div style="margin-top:8px;height:6px;border-radius:4px;background:var(--bg3);overflow:hidden"><div style="height:100%;width:'+pct+'%;background:#f87171;border-radius:4px"></div></div>' +
-            namesHtml + '</div>';
+        html += '<p class="learn-sec">Beban terbesar</p>';
+        report.topExp.forEach(function(x){
+          html += '<div class="card" style="margin-bottom:8px;padding:12px;display:flex;justify-content:space-between"><span>'+(x.name||x.id)+'</span><strong style="color:#f87171">'+fmtRp(x.total)+'</strong></div>';
         });
       }
-
-      // Integrasi: daftar stok barang lengkap
-      html += '<p class="learn-sec">Data stok barang</p>';
-      html += '<p style="font-size:12px;color:var(--dim);margin:-4px 0 10px;line-height:1.45">Semua produk di inventori · Nilai stok dihitung dari (display + gudang) × harga jual.</p>';
-      html += '<div class="stat-grid" style="grid-template-columns:1fr 1fr;margin-bottom:10px">' +
-        '<div class="stat"><div class="l">Nilai inventori</div><div class="v" style="font-size:15px;color:var(--accent)">'+fmtRp(report.inventoryValue||0)+'</div></div>' +
-        '<div class="stat"><div class="l">SKU perlu restok</div><div class="v" style="font-size:15px;color:'+((report.lowStock||[]).length?'#f87171':'var(--accent)')+'">'+(report.lowStock||[]).length+'</div></div>' +
-      '</div>';
-      var sList = report.stockList || [];
-      if (sList.length) {
-        sList.forEach(function(x, idx){
-          var disp = Number(x.qty != null ? x.qty : 0);
-          var gud = Number(x.warehouse != null ? x.warehouse : (x.gudang || 0));
-          var sold = Number(x.sold || 0);
-          var rev = Number(x.revenue || 0);
-          var price = Number(x.price || 0);
-          var val = (disp + gud) * price;
-          var low = (report.lowStock || []).some(function(L){ return L === x || (L.name && L.name === x.name); });
-          html += '<div class="card" style="margin-bottom:8px;padding:12px">' +
-            '<div style="display:flex;justify-content:space-between;gap:8px">' +
-              '<div style="min-width:0"><strong style="font-size:13.5px">'+(x.name||'Tanpa nama')+'</strong>' +
-              (low ? ' <span style="font-size:10px;color:#f87171;font-weight:700">RESTOK</span>' : '') +
-              '<div style="font-size:11.5px;color:var(--dim);margin-top:4px;line-height:1.5">' +
-                'Display: <strong style="color:var(--text)">'+disp+'</strong> · Gudang: <strong style="color:var(--text)">'+gud+'</strong>' +
-                (x.unit ? ' · '+x.unit : '') +
-                '<br>Harga jual: '+fmtRp(price)+' · Terjual: '+sold+' unit' +
-                (rev ? '<br>Omzet kumulatif: '+fmtRp(rev) : '') +
-              '</div></div>' +
-              '<div style="text-align:right;flex-shrink:0"><div style="font-size:12px;color:var(--dim)">Nilai stok</div><div style="font-weight:700;color:var(--accent)">'+fmtRp(val)+'</div></div>' +
-            '</div></div>';
-        });
-      } else {
-        html += '<div class="card" style="color:var(--dim)">Belum ada barang di stok. Tambah produk di tab Stok.</div>';
-      }
-
-      
+      html += '<div class="card" style="margin-top:10px"><div style="font-weight:600;margin-bottom:8px;font-size:13.5px">Unduh per periode</div>' +
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">' +
+        '<button type="button" class="btn" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'day\',\'txt\')">Harian TXT</button>' +
+        '<button type="button" class="btn-outline" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'day\',\'csv\')">Harian CSV</button>' +
+        '<button type="button" class="btn" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'week\',\'txt\')">Mingguan TXT</button>' +
+        '<button type="button" class="btn-outline" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'week\',\'csv\')">Mingguan CSV</button>' +
+        '<button type="button" class="btn" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'month\',\'txt\')">Bulanan TXT</button>' +
+        '<button type="button" class="btn-outline" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'month\',\'csv\')">Bulanan CSV</button>' +
+        '<button type="button" class="btn" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'year\',\'txt\')">Tahunan TXT</button>' +
+        '<button type="button" class="btn-outline" style="padding:10px;font-size:12px" onclick="exportPeriodReport(\'year\',\'csv\')">Tahunan CSV</button>' +
+        '</div>' +
+        '<button type="button" class="btn-outline" style="width:100%;margin-top:8px" onclick="exportAllPeriodsBundle()">4 periode (JSON)</button></div>';
       html += '<button type="button" class="btn-outline" style="width:100%;margin-top:8px" onclick="goPage(\'finance\')">Buka input Keuangan</button>';
       html += '<button type="button" class="btn-outline" style="width:100%;margin-top:8px" onclick="goPage(\'pulse\')">Lihat Revenue Pulse</button>';
       html += '</div>';
@@ -10470,19 +10132,6 @@ function renderPage(page){
         '<button type="button" class="biz-tab" onclick="setStockTab(\'jual\')">'+t('salesTab')+'</button>' +
         '<button type="button" class="biz-tab" onclick="setStockTab(\'lapor\')">'+t('reportTab')+'</button>' +
       '</div>' +
-      '<div class="card" style="margin-bottom:12px;padding:12px">' +
-        '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px">' +
-          '<div style="font-weight:700;font-size:13.5px">Manajemen gudang otomatis</div>' +
-          '<button type="button" class="'+(isAutoGudangOn()?'btn':'btn-outline')+'" style="padding:6px 12px;font-size:11px;border-radius:20px" onclick="setAutoGudang('+(!isAutoGudangOn())+')">'+(isAutoGudangOn()?'Aktif':'Nonaktif')+'</button>' +
-        '</div>' +
-        '<p style="font-size:12px;color:var(--dim);line-height:1.5;margin:0 0 10px">' +
-          (isAutoGudangOn()
-            ? 'ON: jika display kurang saat jual, stok diambil dari gudang. Display diisi lagi hanya jika sudah di bawah minimum.'
-            : 'OFF: gudang tidak otomatis. Pindahkan stok manual atau tekan tombol di bawah.') +
-        '</p>' +
-        '<button type="button" class="btn" style="width:100%;padding:10px;font-size:12px" onclick="runAutoWarehouse({force:true})">Isi display dari gudang (semua barang)</button>' +
-        '<p style="font-size:11px;color:var(--dim);margin:8px 0 0;line-height:1.4">Aturan: display ≤ minimum → isi sampai ±2× minimum (atau 3 jika minimum 0). Butuh stok di kolom Gudang.</p>' +
-      '</div>' +
       '<div class="stat-grid" style="grid-template-columns:1fr 1fr 1fr">' +
         '<div class="stat"><div class="l">Item</div><div class="v">'+filtered.length+'</div></div>' +
         '<div class="stat"><div class="l">Hampir habis</div><div class="v" style="color:'+(lowN?'#f87171':'var(--accent)')+'">'+lowN+'</div></div>' +
@@ -10566,7 +10215,7 @@ function renderPage(page){
       if (__staffFilter === 'done') return st.code === 'done';
       return true;
     });
-    var chips = [['all',(typeof t==='function'?t('all'):'Semua')],['work',(typeof t==='function'?t('workingNow'):'Sedang bekerja')],['done',(typeof t==='function'?t('shiftDone'):'Selesai')],['active',(typeof t==='function'?t('active'):'Aktif')],['off',(typeof t==='function'?t('off'):'Nonaktif')]].map(function(f){
+    var chips = [['all','Semua'],['work','Sedang bekerja'],['done','Selesai'],['active','Aktif'],['off','Nonaktif']].map(function(f){
       var on = __staffFilter === f[0];
       return '<button type="button" class="'+(on?'btn':'btn-outline')+'" style="padding:6px 12px;font-size:12px;border-radius:20px" onclick="setStaffFilter(\''+f[0]+'\')">'+f[1]+'</button>';
     }).join('');
@@ -10576,7 +10225,7 @@ function renderPage(page){
     }).join('');
     var bizListStaff = [];
     try { bizListStaff = (typeof businesses === 'function') ? businesses() : []; } catch(e) { bizListStaff = []; }
-    var staffBizOpts = '<option value="">'+((typeof t==='function')?t('noBiz'):'Tanpa usaha khusus')+'</option>' + bizListStaff.map(function(b){
+    var staffBizOpts = '<option value="">Tanpa usaha khusus</option>' + bizListStaff.map(function(b){
       var sel = editItem && editItem.bizId === b.id;
       try { if (!editItem && typeof activeBiz === 'function' && activeBiz() && activeBiz().id === b.id) sel = true; } catch(e) {}
       return '<option value="'+b.id+'"'+(sel?' selected':'')+'>'+(b.name||'Usaha')+'</option>';
@@ -10598,20 +10247,20 @@ function renderPage(page){
     }
     el.innerHTML = '<div style="max-width:640px;margin:0 auto;padding:16px 16px 100px">' +
       '<h2 style="font-size:20px;margin-bottom:4px">'+((typeof t==='function')?t('staff'):'Karyawan')+'</h2>' +
-      '<p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">'+((typeof t==='function')?t('staffDesc'):'Roster tim: shift & kontak.')+'</p>' +
+      '<p style="color:var(--muted);font-size:13.5px;margin-bottom:14px">Roster tim: siapa kerja apa, shift, dan kontak cepat. Bukan absensi GPS — fokus operasional harian.</p>' +
       (typeof bizTabsHtml === 'function' ? bizTabsHtml('staff') : '') +
       '<div class="stat-grid" style="grid-template-columns:1fr 1fr">' +
-        '<div class="stat"><div class="l">'+((typeof t==='function')?t('total'):'Total')+'</div><div class="v">'+staff.length+'</div></div>' +
-        '<div class="stat"><div class="l">'+((typeof t==='function')?t('active'):'Aktif')+'</div><div class="v" style="color:var(--accent)">'+activeN+'</div></div>' +
-        '<div class="stat"><div class="l">'+((typeof t==='function')?t('workingNow'):'Sedang bekerja')+'</div><div class="v" style="color:var(--accent)">'+onShiftN+'</div></div>' +
-        '<div class="stat"><div class="l">'+((typeof t==='function')?t('shiftDone'):'Selesai shift')+'</div><div class="v">'+doneN+'</div></div>' +
+        '<div class="stat"><div class="l">Total</div><div class="v">'+staff.length+'</div></div>' +
+        '<div class="stat"><div class="l">Aktif</div><div class="v" style="color:var(--accent)">'+activeN+'</div></div>' +
+        '<div class="stat"><div class="l">Sedang bekerja</div><div class="v" style="color:var(--accent)">'+onShiftN+'</div></div>' +
+        '<div class="stat"><div class="l">Selesai shift</div><div class="v">'+doneN+'</div></div>' +
       '</div>' +
       '<div class="card" id="staffFormCard">' +
-        '<div style="font-weight:600;margin-bottom:8px">'+(editItem?((typeof t==='function')?t('editStaff'):'Edit'):((typeof t==='function')?t('addStaff'):'Tambah'))+'</div>' +
-        '<input id="staffName" value="'+(editItem?String(editItem.name||'').replace(/"/g,'&quot;'):'')+'" placeholder="'+((typeof t==='function')?t('fullName'):'Nama lengkap')+'" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
+        '<div style="font-weight:600;margin-bottom:8px">'+(editItem?'Edit karyawan':'Tambah karyawan')+'</div>' +
+        '<input id="staffName" value="'+(editItem?String(editItem.name||'').replace(/"/g,'&quot;'):'')+'" placeholder="Nama lengkap" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
         '<select id="staffRole" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">'+roleSelect+'</select>' +
         '<select id="staffBiz" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">'+staffBizOpts+'</select>' +
-        '<input id="staffShift" value="'+(editItem?String(editItem.shift||'').replace(/"/g,'&quot;'):'')+'" placeholder="'+((typeof t==='function')?t('shiftHint'):'08-16 / 14:00-22:00')+'" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
+        '<input id="staffShift" value="'+(editItem?String(editItem.shift||'').replace(/"/g,'&quot;'):'')+'" placeholder="Jam shift (contoh: 08-16 atau 14:00-22:00)" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
         '<input id="staffPhone" value="'+(editItem?String(editItem.phone||'').replace(/"/g,'&quot;'):'')+'" placeholder="No. WA (08… / 62…)" style="width:100%;margin-bottom:8px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
         '<input id="staffNote" value="'+(editItem?String(editItem.note||'').replace(/"/g,'&quot;'):'')+'" placeholder="Catatan (tugas utama, skill…)" style="width:100%;margin-bottom:10px;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg3);color:var(--text)">' +
         '<button type="button" class="btn" style="width:100%" onclick="saveStaffItem()">'+(editItem?'Update':'Simpan karyawan')+'</button>' +
@@ -10835,29 +10484,11 @@ function finTopCategories(items){
   (items || []).forEach(function(x){
     if (x.type !== 'expense') return;
     var k = x.cat || 'lain_ex';
-    if (!map[k]) map[k] = { total: 0, items: {} };
-    var a = Number(x.amount || 0);
-    map[k].total += a;
-    var label = String(x.stockName || x.label || x.note || '').trim();
-    if (!label) label = (FIN_CATEGORIES_MAP && FIN_CATEGORIES_MAP[k]) ? FIN_CATEGORIES_MAP[k] : (k || 'Tanpa nama');
-    // rapikan prefix "Jual " agar nama barang lebih jelas
-    if (/^Jual\s+/i.test(label)) label = label.replace(/^Jual\s+/i, '').replace(/\s*×\s*\d+.*$/, '').trim() || label;
-    if (!map[k].items[label]) map[k].items[label] = { name: label, total: 0, count: 0 };
-    map[k].items[label].total += a;
-    map[k].items[label].count += 1;
+    map[k] = (map[k] || 0) + Number(x.amount || 0);
   });
   return Object.keys(map).map(function(k){
-    var entry = map[k];
-    var itemList = Object.keys(entry.items).map(function(n){ return entry.items[n]; })
-      .sort(function(a,b){ return b.total - a.total; });
-    return {
-      id: k,
-      name: (typeof FIN_CATEGORIES_MAP !== 'undefined' && FIN_CATEGORIES_MAP[k]) ? FIN_CATEGORIES_MAP[k] : k,
-      total: entry.total,
-      items: itemList,
-      itemNames: itemList.map(function(it){ return it.name; })
-    };
-  }).sort(function(a,b){ return b.total - a.total; }).slice(0, 8);
+    return { id: k, name: FIN_CATEGORIES_MAP[k] || k, total: map[k] };
+  }).sort(function(a,b){ return b.total - a.total; }).slice(0, 5);
 }
 function setFinFilter(f){
   __finFilter = f || 'all';
@@ -10887,22 +10518,20 @@ function listFinanceDays(limit){
     var ts = Number(x.at || 0);
     if (!ts) return;
     var key = '';
-    try { key = new Date(ts).toISOString().slice(0, 10); } catch(e) { return; }
-    if (!map[key]) map[key] = { key: key, income: 0, expense: 0, passive: 0, count: 0, items: [] };
+    try { key = new Date(ts).toISOString().slice(0,10); } catch(e) { return; }
+    if (!map[key]) map[key] = { key: key, income: 0, expense: 0, passive: 0, count: 0 };
     var a = Number(x.amount || 0);
     if (x.type === 'income') map[key].income += a;
     else if (x.type === 'expense') map[key].expense += a;
     else if (x.type === 'passive') map[key].passive += a;
     map[key].count++;
-    map[key].items.push(x);
   });
-  return Object.keys(map).sort(function(a, b){ return a < b ? 1 : -1; }).slice(0, limit).map(function(k){
+  return Object.keys(map).sort(function(a,b){ return a < b ? 1 : -1; }).slice(0, limit).map(function(k){
     var d = map[k];
-    d.net = (d.income || 0) + (d.passive || 0) - (d.expense || 0);
+    d.net = d.income + d.passive - d.expense;
     return d;
   });
 }
-
 function setFinDayFilter(dayKey){
   window.__finDayKey = dayKey || '';
   if (dayKey) __finFilter = 'daypick';
@@ -10921,41 +10550,20 @@ window.exportFinanceDay = exportFinanceDay;
 
 function summarizeFinPeriod(period){
   var fin = loadFinance();
-  var b = (typeof finPeriodBounds === 'function') ? finPeriodBounds(period) : { start: 0, end: Date.now() };
-  var income = 0, expense = 0, passive = 0, salesSku = 0, count = 0;
-  var items = [];
-  var catIncome = {}, catExpense = {};
+  var b = finPeriodBounds(period);
+  var income = 0, expense = 0, passive = 0, salesSku = 0;
   (fin.items || []).forEach(function(x){
     var ts = Number(x.at || 0);
     if (period && period !== 'all') {
       if (ts < b.start || ts > b.end) return;
     }
     var a = Number(x.amount || 0);
-    var cat = String(x.cat || x.category || '') || '(tanpa kategori)';
-    var label = String(x.label || x.note || cat || x.type || '');
-    var row = {
-      at: ts,
-      type: x.type || '',
-      cat: cat,
-      label: label,
-      amount: a,
-      bizId: x.bizId || '',
-      bizName: x.bizName || x.biz || ''
-    };
-    items.push(row);
-    count++;
     if (x.type === 'income') {
       income += a;
-      catIncome[cat] = (catIncome[cat] || 0) + a;
-      if (cat === 'penjualan') salesSku += a;
-    } else if (x.type === 'expense') {
-      expense += a;
-      catExpense[cat] = (catExpense[cat] || 0) + a;
-    } else if (x.type === 'passive') {
-      passive += a;
-    }
+      if (String(x.cat || '') === 'penjualan') salesSku += a;
+    } else if (x.type === 'expense') expense += a;
+    else if (x.type === 'passive') passive += a;
   });
-  items.sort(function(a,b){ return (a.at||0) - (b.at||0); });
   return {
     period: period || 'all',
     at: Date.now(),
@@ -10964,14 +10572,9 @@ function summarizeFinPeriod(period){
     passive: passive,
     salesSku: salesSku,
     otherIncome: Math.max(0, income - salesSku),
-    net: income + passive - expense,
-    count: count,
-    items: items,
-    catIncome: catIncome,
-    catExpense: catExpense
+    net: income + passive - expense
   };
 }
-
 function loadSavedReports(){
   try {
     var a = vanStoreParse('van_reports', []);
@@ -10992,24 +10595,12 @@ function saveFinancePeriodReport(period){
     label: map[period] || period,
     period: period,
     at: Date.now(),
-    data: {
-      income: sum.income,
-      expense: sum.expense,
-      passive: sum.passive,
-      net: sum.net,
-      count: sum.count,
-      salesSku: sum.salesSku,
-      otherIncome: sum.otherIncome,
-      catIncome: sum.catIncome,
-      catExpense: sum.catExpense,
-      items: (sum.items || []).slice(0, 500)
-    }
+    data: sum
   });
   saveSavedReports(list);
-  try { toast('Laporan ' + (map[period] || period) + ' disimpan (' + sum.count + ' transaksi)'); } catch(e) {}
+  try { toast('Laporan ' + (map[period] || period) + ' disimpan'); } catch(e) {}
   goPage('finance');
 }
-
 function deleteSavedReport(id){
   var list = loadSavedReports().filter(function(r){ return String(r.id) !== String(id); });
   saveSavedReports(list);
@@ -11182,20 +10773,8 @@ function vanOmzetReport(filterBiz){
     weekEx: sumType('expense', bounds.week),
     monthIn: sumType('income', bounds.month) + sumType('passive', bounds.month),
     monthEx: sumType('expense', bounds.month),
-    topSku: stock.filter(function(x){ return Number(x.revenue||0) > 0; }).slice().sort(function(a,b){ return Number(b.revenue||0)-Number(a.revenue||0); }).slice(0,10),
-    topExp: (typeof finTopCategories === 'function' ? finTopCategories(items) : []),
-    // Integrasi data stok barang
-    stockList: stock.slice().sort(function(a,b){ return String(a.name||'').localeCompare(String(b.name||'')); }),
-    lowStock: stock.filter(function(x){
-      var q = Number(x.qty||0) + Number(x.warehouse||x.gudang||0);
-      var min = Number(x.min||x.minQty||0);
-      return min > 0 ? q <= min : q <= 0;
-    }),
-    inventoryValue: stock.reduce(function(s,x){
-      var q = Number(x.qty||0) + Number(x.warehouse||x.gudang||0);
-      return s + q * Number(x.price||0);
-    }, 0),
-    stockNames: stock.map(function(x){ return x.name || ''; }).filter(Boolean)
+    topSku: stock.filter(function(x){ return Number(x.revenue||0) > 0; }).slice().sort(function(a,b){ return Number(b.revenue||0)-Number(a.revenue||0); }).slice(0,5),
+    topExp: (typeof finTopCategories === 'function' ? finTopCategories(items) : [])
   };
 }
 function vanReportStamp(){
@@ -11240,134 +10819,6 @@ function csvEscape(v){
   if (/[",\n\r]/.test(v)) return '"' + v.replace(/"/g, '""') + '"';
   return v;
 }
-function vanExcelEsc(s){
-  return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function vanExcelMoney(n){
-  n = Number(n) || 0;
-  try {
-    return n.toLocaleString('id-ID', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-  } catch(e) { return String(n); }
-}
-function vanExcelTs(ts){
-  if (!ts) return '';
-  try {
-    var d = new Date(ts);
-    return d.toLocaleDateString('id-ID', { day:'2-digit', month:'2-digit', year:'numeric' }) + ' ' +
-      d.toLocaleTimeString('id-ID', { hour:'2-digit', minute:'2-digit' });
-  } catch(e) { return String(ts); }
-}
-/** Bangun HTML Excel profesional untuk satu ringkasan summarizeFinPeriod */
-function vanBuildPeriodExcelHtml(period, s){
-  var map = { day: 'Harian', week: 'Mingguan', month: 'Bulanan', year: 'Tahunan', all: 'Semua' };
-  var typeMap = { income: 'Pemasukan', expense: 'Pengeluaran', passive: 'Passive' };
-  var catMap = (typeof FIN_CATEGORIES_MAP !== 'undefined') ? FIN_CATEGORIES_MAP : {};
-  var title = map[period] || period || 'Laporan';
-  s = s || {};
-  function catLabel(c){ return catMap[c] || c || '—'; }
-  function th(cols){
-    return '<tr>' + cols.map(function(h){
-      return '<th style="background:#1a1a1a;color:#e8b84a;font-weight:700;padding:8px 10px;border:1px solid #333;text-align:left;white-space:nowrap">' + vanExcelEsc(h) + '</th>';
-    }).join('') + '</tr>';
-  }
-  function td(vals, opts){
-    opts = opts || {};
-    return '<tr>' + vals.map(function(v, i){
-      var align = (opts.numCols && opts.numCols.indexOf(i) >= 0) ? 'right' : 'left';
-      var extra = opts.rowColor ? 'background:' + opts.rowColor + ';' : '';
-      return '<td style="padding:6px 10px;border:1px solid #ccc;text-align:' + align + ';' + extra + '">' + vanExcelEsc(v) + '</td>';
-    }).join('') + '</tr>';
-  }
-  function table(titleText, heads, rows, numCols){
-    var html = '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;max-width:960px;margin:0 0 18px;font-family:Calibri,Arial,sans-serif;font-size:11pt">';
-    if (titleText) {
-      html += '<tr><td colspan="' + heads.length + '" style="background:#e8b84a;color:#111;font-weight:700;font-size:12pt;padding:10px 12px;border:1px solid #c9a227">' + vanExcelEsc(titleText) + '</td></tr>';
-    }
-    html += '<thead>' + th(heads) + '</thead><tbody>';
-    if (!rows.length) {
-      html += '<tr><td colspan="' + heads.length + '" style="padding:10px;border:1px solid #ccc;color:#666">(Tidak ada data)</td></tr>';
-    } else {
-      rows.forEach(function(r, idx){
-        html += td(r, { numCols: numCols || [], rowColor: idx % 2 ? '#f7f7f7' : '#ffffff' });
-      });
-    }
-    html += '</tbody></table>';
-    return html;
-  }
-  function itemRows(typeFilter){
-    return (s.items || []).filter(function(x){
-      return !typeFilter || x.type === typeFilter;
-    }).map(function(x, i){
-      return [
-        i + 1,
-        vanExcelTs(x.at),
-        typeMap[x.type] || x.type || '',
-        catLabel(x.cat),
-        x.label || '—',
-        vanExcelMoney(x.amount),
-        x.type === 'expense' ? 'Keluar' : 'Masuk',
-        x.bizName || x.bizId || '—'
-      ];
-    });
-  }
-  function catRows(obj){
-    return Object.keys(obj || {}).sort().map(function(k){
-      return [catLabel(k), vanExcelMoney(obj[k])];
-    });
-  }
-
-  var body = '';
-  body += '<div style="font-family:Calibri,Arial,sans-serif;max-width:960px">';
-  body += '<h1 style="margin:0 0 4px;font-size:18pt;color:#111">Laporan Keuangan Van</h1>';
-  body += '<p style="margin:0 0 4px;font-size:12pt"><strong>Periode:</strong> ' + vanExcelEsc(title) + '</p>';
-  body += '<p style="margin:0 0 16px;font-size:10pt;color:#555">Diekspor: ' + vanExcelEsc(new Date().toLocaleString('id-ID')) + ' · Nominal dalam Rupiah (Rp)</p>';
-
-  body += table('1. Ringkasan', ['Metrik', 'Nilai (Rp)'], [
-    ['Total pemasukan', vanExcelMoney(s.income)],
-    ['Total pengeluaran', vanExcelMoney(s.expense)],
-    ['Passive', vanExcelMoney(s.passive)],
-    ['Net (pemasukan + passive − pengeluaran)', vanExcelMoney(s.net)],
-    ['Jumlah transaksi', String(s.count || 0)],
-    ['Omzet SKU (penjualan)', vanExcelMoney(s.salesSku)],
-    ['Pemasukan non-SKU', vanExcelMoney(s.otherIncome)]
-  ], [1]);
-
-  body += table('2. Rekap kategori pemasukan', ['Kategori', 'Total (Rp)'], catRows(s.catIncome), [1]);
-  body += table('3. Rekap kategori pengeluaran', ['Kategori', 'Total (Rp)'], catRows(s.catExpense), [1]);
-
-  var heads = ['No', 'Tanggal & waktu', 'Jenis', 'Kategori', 'Keterangan', 'Nominal (Rp)', 'Arah', 'Usaha'];
-  body += table('4. Detail pemasukan', heads, itemRows('income'), [0, 5]);
-  body += table('5. Detail pengeluaran', heads, itemRows('expense'), [0, 5]);
-  body += table('6. Detail passive', heads, itemRows('passive'), [0, 5]);
-  body += table('7. Semua transaksi (berurutan)', heads, itemRows(null), [0, 5]);
-
-  body += '<p style="font-size:9pt;color:#888;margin-top:12px">Dibuat oleh Van · Data tersimpan di perangkat pengguna</p>';
-  body += '</div>';
-  return body;
-}
-function vanWrapExcelDoc(bodyHtml, sheetName){
-  sheetName = sheetName || 'Laporan Van';
-  return '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">' +
-    '<head><meta charset="utf-8">' +
-    '<!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>' +
-    '<x:Name>' + vanExcelEsc(sheetName).slice(0, 31) + '</x:Name>' +
-    '<x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>' +
-    '</x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]-->' +
-    '<style>br{mso-data-placement:same-cell} td,th{mso-number-format:"\\@"}</style>' +
-    '</head><body>' + bodyHtml + '</body></html>';
-}
-function exportPeriodExcel(period){
-  period = period || 'day';
-  var map = { day: 'Harian', week: 'Mingguan', month: 'Bulanan', year: 'Tahunan' };
-  var s = summarizeFinPeriod(period) || {};
-  var title = map[period] || period;
-  // Desain identik dengan gabungan 4 periode (vanBuildPeriodExcelHtml + vanWrapExcelDoc)
-  var html = vanWrapExcelDoc(vanBuildPeriodExcelHtml(period, s), 'Van ' + title);
-  vanDownloadText('Van_Laporan_' + title + '_' + vanReportStamp() + '.xls', 'application/vnd.ms-excel;charset=utf-8', html);
-  try { toast('Excel ' + title + ' siap · ' + (s.count || 0) + ' transaksi'); } catch(e) {}
-}
-
-
 function exportPeriodReport(period, fmt){
   period = period || 'day';
   fmt = fmt || 'txt';
@@ -11376,10 +10827,6 @@ function exportPeriodReport(period, fmt){
   try {
     if (fmt === 'csv') {
       exportFinTransactionsCsv(period);
-      return;
-    }
-    if (fmt === 'xls' || fmt === 'excel') {
-      exportPeriodExcel(period);
       return;
     }
     if (fmt === 'json') {
@@ -11430,54 +10877,24 @@ function exportPeriodReport(period, fmt){
 function exportAllPeriodsBundle(){
   var periods = ['day', 'week', 'month', 'year'];
   var map = { day: 'Harian', week: 'Mingguan', month: 'Bulanan', year: 'Tahunan' };
-  // Desain sama dengan exportPeriodExcel (vanBuildPeriodExcelHtml)
-  var body = '';
-  body += '<div style="font-family:Calibri,Arial,sans-serif;max-width:960px">';
-  body += '<h1 style="margin:0 0 4px;font-size:18pt;color:#111">Laporan Keuangan Van</h1>';
-  body += '<p style="margin:0 0 4px;font-size:12pt"><strong>Periode:</strong> Gabungan 4 periode (Harian · Mingguan · Bulanan · Tahunan)</p>';
-  body += '<p style="margin:0 0 16px;font-size:10pt;color:#555">Diekspor: ' + vanExcelEsc(new Date().toLocaleString('id-ID')) + ' · Nominal dalam Rupiah (Rp)</p>';
-
-  // Ringkasan atas — style identik dengan tabel di vanBuildPeriodExcelHtml
-  var sumRows = periods.map(function(p){
-    var s = summarizeFinPeriod(p) || {};
-    return [
-      map[p],
-      vanExcelMoney(s.income),
-      vanExcelMoney(s.expense),
-      vanExcelMoney(s.passive),
-      vanExcelMoney(s.net),
-      String(s.count || 0)
-    ];
+  var out = {
+    app: 'Van',
+    type: 'all_periods_report',
+    at: Date.now(),
+    periods: {}
+  };
+  periods.forEach(function(p){
+    out.periods[p] = {
+      label: map[p],
+      summary: summarizeFinPeriod(p)
+    };
   });
-  body += '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;max-width:960px;margin:0 0 18px;font-family:Calibri,Arial,sans-serif;font-size:11pt">';
-  body += '<tr><td colspan="6" style="background:#e8b84a;color:#111;font-weight:700;font-size:12pt;padding:10px 12px;border:1px solid #c9a227">0. Ringkasan 4 periode</td></tr>';
-  body += '<tr>' + ['Periode','Pemasukan (Rp)','Pengeluaran (Rp)','Passive (Rp)','Net (Rp)','Trx'].map(function(h){
-    return '<th style="background:#1a1a1a;color:#e8b84a;font-weight:700;padding:8px 10px;border:1px solid #333;text-align:left;white-space:nowrap">' + h + '</th>';
-  }).join('') + '</tr>';
-  sumRows.forEach(function(r, idx){
-    body += '<tr>' + r.map(function(c, i){
-      return '<td style="padding:6px 10px;border:1px solid #ccc;text-align:' + (i === 0 ? 'left' : 'right') + ';background:' + (idx % 2 ? '#f7f7f7' : '#ffffff') + '">' + vanExcelEsc(c) + '</td>';
-    }).join('') + '</tr>';
-  });
-  body += '</table>';
-
-  // Tiap periode: builder yang sama persis dengan unduh per periode
-  periods.forEach(function(p, idx){
-    body += '<div style="margin-top:28px;padding-top:8px;border-top:2px solid #e8b84a"></div>';
-    body += vanBuildPeriodExcelHtml(p, summarizeFinPeriod(p) || {});
-  });
-
-  body += '<p style="font-size:9pt;color:#888;margin-top:12px">Dibuat oleh Van · Data tersimpan di perangkat pengguna</p>';
-  body += '</div>';
-
-  var html = vanWrapExcelDoc(body, 'Van 4 Periode');
-  vanDownloadText('Van_Laporan_4_Periode_' + vanReportStamp() + '.xls', 'application/vnd.ms-excel;charset=utf-8', html);
-  try { toast('Excel gabungan 4 periode (desain sama per periode)'); } catch(e) {}
+  vanDownloadText(
+    'van-laporan-semua-periode-' + vanReportStamp() + '.json',
+    'application/json;charset=utf-8',
+    JSON.stringify(out, null, 2)
+  );
 }
-
-
-
-
 
 function exportVanFinanceReport(fmt){
   fmt = fmt || 'txt';
@@ -11556,7 +10973,7 @@ function exportFinTransactionsCsv(period, dayKey){
   var b = (typeof finPeriodBounds === 'function') ? finPeriodBounds(period) : { start: 0, end: Date.now() };
   var typeMap = { income: 'Pemasukan', expense: 'Pengeluaran', passive: 'Passive' };
   var catMap = (typeof FIN_CATEGORIES_MAP !== 'undefined') ? FIN_CATEGORIES_MAP : {};
-  var mapPeriod = { day: 'Harian', week: 'Mingguan', month: 'Bulanan', year: 'Tahunan', all: (typeof t==='function'?t('all'):'Semua') };
+  var mapPeriod = { day: 'Harian', week: 'Mingguan', month: 'Bulanan', year: 'Tahunan', all: 'Semua' };
   var periodLabel = mapPeriod[period] || period;
   if (dayKey) periodLabel = 'Tanggal ' + dayKey;
 
@@ -11661,77 +11078,14 @@ function exportSavedReport(id, fmt){
 function exportAllSavedReports(){
   var list = loadSavedReports();
   if (!list.length) { try { toast('Belum ada laporan tersimpan'); } catch(e) {} return; }
-  var typeMap = { income: 'Pemasukan', expense: 'Pengeluaran', passive: 'Passive' };
-  var catMap = (typeof FIN_CATEGORIES_MAP !== 'undefined') ? FIN_CATEGORIES_MAP : {};
-  function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-  function fmtTs(ts){
-    if (!ts) return '';
-    try { return new Date(ts).toLocaleString('id-ID'); } catch(e) { return String(ts); }
-  }
-  function catLabel(c){ return catMap[c] || c || ''; }
-  function table(title, heads, rows){
-    return '<h3>' + esc(title) + '</h3><table border="1" cellpadding="4" cellspacing="0"><thead><tr>' +
-      heads.map(function(h){ return '<th>' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
-      (rows.length ? rows.map(function(r){
-        return '<tr>' + r.map(function(c){ return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>';
-      }).join('') : '<tr><td colspan="'+heads.length+'">(tidak ada data)</td></tr>') +
-      '</tbody></table><br/>';
-  }
-  var indexRows = list.map(function(r, i){
-    var d = r.data || {};
-    return [
-      i + 1,
-      r.label || r.period || '',
-      r.at ? new Date(r.at).toLocaleString('id-ID') : '',
-      d.income || 0,
-      d.expense || 0,
-      d.passive || 0,
-      d.net != null ? d.net : '',
-      d.count || (d.items ? d.items.length : 0)
-    ];
-  });
-  var body = '<h2>Semua laporan tersimpan — Van</h2>';
-  body += '<p>Diekspor: ' + esc(new Date().toLocaleString('id-ID')) + '</p>';
-  body += table('Indeks laporan', ['No','Periode','Disimpan','Pemasukan','Pengeluaran','Passive','Net','Trx'], indexRows);
-
-  list.forEach(function(r, i){
-    var d = r.data || {};
-    var items = d.items || [];
-    body += '<h2>Laporan ' + (i + 1) + ' — ' + esc(r.label || r.period || '') + '</h2>';
-    body += table('Ringkasan', ['Metrik','Nilai'], [
-      ['Periode', r.label || r.period || ''],
-      ['Disimpan', r.at ? new Date(r.at).toLocaleString('id-ID') : ''],
-      ['Pemasukan', d.income || 0],
-      ['Pengeluaran', d.expense || 0],
-      ['Passive', d.passive || 0],
-      ['Net', d.net != null ? d.net : ''],
-      ['Jumlah transaksi', d.count || items.length]
-    ]);
-    if (d.catIncome) {
-      body += table('Kategori pemasukan', ['Kategori','Total'], Object.keys(d.catIncome).map(function(k){ return [catLabel(k)||k, d.catIncome[k]]; }));
-    }
-    if (d.catExpense) {
-      body += table('Kategori pengeluaran', ['Kategori','Total'], Object.keys(d.catExpense).map(function(k){ return [catLabel(k)||k, d.catExpense[k]]; }));
-    }
-    var inc = items.filter(function(x){ return x.type === 'income'; }).map(function(x, n){
-      return [n+1, fmtTs(x.at), typeMap[x.type]||x.type, catLabel(x.cat), x.label||'', x.amount||0, 'Masuk', x.bizName||x.bizId||''];
-    });
-    var exp = items.filter(function(x){ return x.type === 'expense'; }).map(function(x, n){
-      return [n+1, fmtTs(x.at), typeMap[x.type]||x.type, catLabel(x.cat), x.label||'', x.amount||0, 'Keluar', x.bizName||x.bizId||''];
-    });
-    body += table('Detail pemasukan', ['No','Waktu','Jenis','Kategori','Keterangan','Nominal','Arah','Usaha'], inc);
-    body += table('Detail pengeluaran', ['No','Waktu','Jenis','Kategori','Keterangan','Nominal','Arah','Usaha'], exp);
-    body += table('Semua transaksi laporan ini', ['No','Waktu','Jenis','Kategori','Keterangan','Nominal','Arah','Usaha'], items.map(function(x, n){
-      return [n+1, fmtTs(x.at), typeMap[x.type]||x.type, catLabel(x.cat), x.label||'', x.amount||0, x.type==='expense'?'Keluar':'Masuk', x.bizName||x.bizId||''];
-    }));
-  });
-
-  var html = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"><head><meta charset="utf-8"></head><body>' + body + '</body></html>';
-  vanDownloadText('van-semua-laporan-' + vanReportStamp() + '.xls', 'application/vnd.ms-excel;charset=utf-8', html);
-  try { toast('Excel laporan tersimpan (termasuk detail keluar/masuk)'); } catch(e) {}
+  vanDownloadText('van-semua-laporan-' + vanReportStamp() + '.json', 'application/json;charset=utf-8', JSON.stringify({
+    app: 'Van',
+    type: 'saved_reports',
+    at: Date.now(),
+    count: list.length,
+    reports: list
+  }, null, 2));
 }
-
-
 try {
   window.exportVanFinanceReport = exportVanFinanceReport;
   window.exportPeriodReport = exportPeriodReport;
@@ -11965,252 +11319,49 @@ function startStockEdit(i){
   try { setTimeout(function(){ var c=document.getElementById('stockFormCard'); if(c)c.scrollIntoView({behavior:'smooth',block:'start'}); }, 50); } catch(e) {}
 }
 function cancelStockEdit(){ __stockEditIdx = -1; goPage('stock'); }
-function isAutoGudangOn(){
-  try { return localStorage.getItem('van_auto_gudang') !== '0'; } catch(e) { return true; }
-}
-function setAutoGudang(on){
-  try { localStorage.setItem('van_auto_gudang', on ? '1' : '0'); } catch(e) {}
-  try { toast(on ? 'Gudang otomatis: aktif' : 'Gudang otomatis: nonaktif'); } catch(e) {}
-  try { goPage('stock'); } catch(e) {}
-}
-/**
- * Rencana refill optimasi:
- * - reorderPoint: ambang mulai isi (histeresis, hindari transfer kecil berulang)
- * - target: level aman (min + buffer, atau kecepatan jual × hari cover)
- * - prioritas: kritis jika qty <= min
- */
-function stockRefillPlan(it){
-  var min = Math.max(0, Number(it.min || 0));
-  var qty = Math.max(0, Number(it.qty || 0));
-  var gudang = Math.max(0, Number(it.gudang || 0));
-  var sold = Math.max(0, Number(it.sold || 0));
-  // Estimasi penjualan harian (sold kumulatif diasumsikan ~30 hari, floor kecil)
-  var daily = sold > 0 ? (sold / 30) : 0;
-  var coverDays = 5;   // siapkan display untuk ~5 hari
-  var leadDays = 2;    // picu refill ~2 hari sebelum habis
-  var velocityTrigger = Math.ceil(daily * leadDays);
-  var velocityTarget = Math.ceil(daily * coverDays);
-
-  var reorderPoint, target;
-  if (min > 0) {
-    reorderPoint = Math.max(min, velocityTrigger);
-    // buffer 50% di atas min, minimal +1
-    var minBuffer = min + Math.max(1, Math.ceil(min * 0.5));
-    target = Math.max(minBuffer, velocityTarget, reorderPoint + 1);
-    // batas atas: jangan menimbun berlebih di display
-    var cap = Math.max(min * 3, Math.ceil(daily * 14), minBuffer);
-    target = Math.min(target, cap);
-  } else if (sold > 0) {
-    reorderPoint = Math.max(2, velocityTrigger);
-    target = Math.max(5, velocityTarget, reorderPoint + 1);
-    target = Math.min(target, Math.max(10, Math.ceil(daily * 14)));
-  } else {
-    // SKU baru / belum laku: target kecil, hemat gudang
-    reorderPoint = 1;
-    target = 5;
+function refillDisplayFromGudang(it){
+  var min = Number(it.min || 0);
+  var qty = Number(it.qty || 0);
+  var gudang = Number(it.gudang || 0);
+  if (qty <= min && gudang > 0) {
+    var need = Math.max(1, (min + 1) - qty);
+    var mv = Math.min(gudang, need);
+    it.gudang = gudang - mv;
+    it.qty = qty + mv;
+    return mv;
   }
-  reorderPoint = Math.floor(reorderPoint);
-  target = Math.floor(target);
-  if (target < reorderPoint + 1) target = reorderPoint + 1;
-
-  var critical = min > 0 ? (qty <= min) : (qty <= 0);
-  var shouldRefill = critical || qty <= reorderPoint;
-  var deficit = Math.max(0, target - qty);
-  // skor prioritas: kritis dulu, lalu deficit, lalu velocity
-  var score = (critical ? 100000 : 0) + deficit * 10 + daily * 100 + (sold > 0 ? 1 : 0);
-
-  return {
-    min: min,
-    qty: qty,
-    gudang: gudang,
-    daily: daily,
-    reorderPoint: reorderPoint,
-    target: target,
-    deficit: deficit,
-    critical: critical,
-    shouldRefill: shouldRefill,
-    score: score
-  };
+  return 0;
 }
-function stockDisplayTarget(it){
-  return stockRefillPlan(it).target;
-}
-/**
- * Isi display dari gudang — algoritma optimasi.
- * mode: 'min' | 'target' | 'need' (needQty) | 'plan' (hormati histeresis)
- */
-function refillDisplayFromGudang(it, mode, needQty){
-  if (!it) return 0;
-  var gudang = Math.max(0, Number(it.gudang || 0));
-  if (gudang <= 0) return 0;
-  var qty = Math.max(0, Number(it.qty || 0));
-  mode = mode || 'plan';
-  var plan = stockRefillPlan(it);
-  var want = qty;
-
-  if (mode === 'need') {
-    // Pastikan cukup untuk transaksi jual; boleh di atas target
-    want = Math.max(qty, Number(needQty || 0));
-  } else if (mode === 'target') {
-    // Paksa sampai target (tombol manual / force)
-    want = plan.target;
-  } else if (mode === 'min') {
-    if (qty > plan.min && plan.min > 0) return 0;
-    if (qty > 0 && plan.min <= 0) return 0;
-    want = plan.target;
-  } else {
-    // plan (default): histeresis — hanya jika di bawah reorder point
-    if (!plan.shouldRefill) return 0;
-    want = plan.target;
-  }
-
-  if (want <= qty) return 0;
-  var need = want - qty;
-  // Transfer bulk: jangan pindah 1-1 jika deficit besar & gudang cukup (sudah dihitung need)
-  var mv = Math.min(gudang, need);
-  if (mv <= 0) return 0;
-  // Jika hampir semua gudang ikut tersedot untuk non-kritis, sisakan 10% di gudang (cadangan)
-  if (!plan.critical && mode !== 'need' && gudang > 5) {
-    var reserve = Math.max(1, Math.floor(gudang * 0.1));
-    mv = Math.min(mv, gudang - reserve);
-    if (mv <= 0) return 0;
-  }
-  it.gudang = gudang - mv;
-  it.qty = qty + mv;
-  it._lastAutoFill = Date.now();
-  it._lastAutoFillQty = mv;
-  it._refillTarget = plan.target;
-  it._reorderPoint = plan.reorderPoint;
-  return mv;
-}
-/** Batch optimasi: prioritaskan SKU kritis, lalu skor tertinggi */
-function runAutoWarehouse(opts){
-  opts = opts || {};
-  if (!isAutoGudangOn() && !opts.force) {
-    try { toast('Gudang otomatis nonaktif. Aktifkan di tab Stok.'); } catch(e) {}
-    return { moved: 0, items: 0, log: [] };
-  }
-  var list = loadStock();
-  var plans = list.map(function(it, i){
-    return { it: it, i: i, plan: stockRefillPlan(it) };
-  });
-  // Urut: kritis dulu, lalu score
-  plans.sort(function(a, b){
-    if (a.plan.critical !== b.plan.critical) return a.plan.critical ? -1 : 1;
-    return b.plan.score - a.plan.score;
-  });
-  var moved = 0, touched = 0, log = [];
-  var mode = opts.force ? 'target' : 'plan';
-  plans.forEach(function(row){
-    var mv = refillDisplayFromGudang(row.it, mode);
-    if (mv > 0) {
-      moved += mv;
-      touched++;
-      log.push({
-        name: row.it.name || 'Item',
-        qty: mv,
-        display: row.it.qty,
-        gudang: row.it.gudang,
-        target: row.plan.target,
-        critical: row.plan.critical
-      });
-    }
-  });
-  if (moved > 0) saveStock(list);
-  if (!opts.silent) {
-    try {
-      if (moved > 0) toast('Refill optimasi: +' + moved + ' unit · ' + touched + ' SKU');
-      else toast('Display aman · tidak perlu transfer');
-    } catch(e) {}
-  }
-  return { moved: moved, items: touched, log: log };
-}
-function transferGudangToDisplay(i, n){
-  n = Number(n) || 1;
-  var list = loadStock();
-  var it = list[i];
-  if (!it) return;
-  var g = Number(it.gudang || 0);
-  if (g < n) { try { toast('Gudang tidak cukup'); } catch(e) {} return; }
-  it.gudang = g - n;
-  it.qty = Number(it.qty || 0) + n;
-  saveStock(list);
-  try { toast('Pindah ' + n + ' unit gudang → display'); } catch(e) {}
-  goPage('stock');
-}
-function transferDisplayToGudang(i, n){
-  n = Number(n) || 1;
-  var list = loadStock();
-  var it = list[i];
-  if (!it) return;
-  var q = Number(it.qty || 0);
-  if (q < n) { try { toast('Display tidak cukup'); } catch(e) {} return; }
-  it.qty = q - n;
-  it.gudang = Number(it.gudang || 0) + n;
-  saveStock(list);
-  try { toast('Pindah ' + n + ' unit display → gudang'); } catch(e) {}
-  goPage('stock');
-}
-try {
-  window.isAutoGudangOn = isAutoGudangOn;
-  window.setAutoGudang = setAutoGudang;
-  window.runAutoWarehouse = runAutoWarehouse;
-  window.refillDisplayFromGudang = refillDisplayFromGudang;
-  window.stockRefillPlan = stockRefillPlan;
-  window.stockDisplayTarget = stockDisplayTarget;
-  window.transferGudangToDisplay = transferGudangToDisplay;
-  window.transferDisplayToGudang = transferDisplayToGudang;
-} catch(e) {}
-
 function sellStock(i, n){
   n = Number(n) || 1;
   var list = loadStock();
   var it = list[i];
   if (!it) return;
-  // Manajemen gudang otomatis: tarik dari gudang jika display kurang
-  var autoMv = 0;
   if (Number(it.qty || 0) < n) {
-    if (isAutoGudangOn()) {
-      autoMv = refillDisplayFromGudang(it, 'need', n);
-    }
-    if (Number(it.qty || 0) < n) {
-      var less = n - Number(it.qty || 0);
-      try {
-        toast('Stok tidak cukup (kurang ' + less + '). Gudang: ' + Number(it.gudang || 0));
-      } catch(e) {}
-      return;
-    }
+    try { toast('Display kurang. Isi dari gudang dulu.'); } catch(e) {}
+    return;
   }
   it.qty = Number(it.qty || 0) - n;
   it.sold = Number(it.sold || 0) + n;
   var price = Number(it.price || 0);
   it.revenue = Number(it.revenue || 0) + n * price;
-  // Setelah jual, isi ulang display dari gudang sampai target aman
-  var mv = 0;
-  if (isAutoGudangOn()) mv = refillDisplayFromGudang(it, 'target');
-  else mv = refillDisplayFromGudang(it, 'min');
+  var mv = refillDisplayFromGudang(it);
   saveStock(list);
   try {
     if (price > 0) {
       var fin = loadFinance();
       fin.items.push({
-        type: 'income',
-        cat: 'penjualan',
+        type: 'income', cat: 'penjualan',
         label: 'Jual ' + (it.name || 'barang') + ' ×' + n,
         amount: n * price,
         bizId: it.bizId || '',
-        stockId: it.id || ('idx_' + i),
-        stockName: it.name || 'barang',
-        qty: n,
-        unitPrice: price,
-        unit: it.unit || '',
         at: Date.now()
       });
       saveFinance(fin);
     }
   } catch(e) {}
   try {
-    toast('Terjual ' + n + (it.name ? ' × ' + it.name : '') + (price ? ' · ' + fmtRp(n * price) : '') + ((autoMv||mv) ? ' · +'+(autoMv+mv)+' display dari gudang' : ''));
+    toast('Terjual ' + n + (price ? (' · +' + fmtRp(n * price)) : '') + (mv ? (' · isi display +' + mv + ' dari gudang') : ''));
   } catch(e) {}
   try {
     if (typeof __stockTab !== 'undefined' && __stockTab === 'jual') goPage('stock');
@@ -13217,19 +12368,18 @@ function parseShiftRange(s){
   return { from: Number(m[1]) * 60 + Number(m[2] || 0), to: Number(m[3]) * 60 + Number(m[4] || 0) };
 }
 function staffShiftStatus(x){
-  function L(key, fb){ try { if (typeof t==='function'){ var v=t(key); if(v&&v!==key) return v; } } catch(e){} return fb; }
-  if (!x || x.active === false) return { code:'off', label: L('off','Nonaktif') };
+  if (!x || x.active === false) return { code:'off', label:'Nonaktif' };
   var r = parseShiftRange(x.shift);
-  if (!r) return { code:'active', label: L('active','Aktif') };
+  if (!r) return { code:'active', label:'Aktif' };
   var now = new Date();
   var mins = now.getHours() * 60 + now.getMinutes();
   var overnight = r.to <= r.from;
   var working = overnight ? (mins >= r.from || mins < r.to) : (mins >= r.from && mins < r.to);
-  if (working) return { code:'work', label: L('workingNow','Sedang bekerja') };
-  if (!overnight && mins < r.from) return { code:'wait', label: L('shiftWait','Belum mulai shift') };
-  if (!overnight && mins >= r.to) return { code:'done', label: L('shiftDone','Selesai bekerja') };
-  if (overnight && mins >= r.to && mins < r.from) return { code:'done', label: L('shiftDone','Selesai bekerja') };
-  return { code:'done', label: L('shiftDone','Selesai bekerja') };
+  if (working) return { code:'work', label:'Sedang bekerja' };
+  if (!overnight && mins < r.from) return { code:'wait', label:'Belum mulai shift' };
+  if (!overnight && mins >= r.to) return { code:'done', label:'Selesai bekerja' };
+  if (overnight && mins >= r.to && mins < r.from) return { code:'done', label:'Selesai bekerja' };
+  return { code:'done', label:'Selesai bekerja' };
 }
 function staffIsOnShift(x){
   try { return staffShiftStatus(x).code === 'work'; } catch(e) {
@@ -13347,7 +12497,37 @@ function exportVanXls(){
     table('Stok', ['Usaha','Nama','Display','Gudang','Min','Harga','Terjual','Omzet','Satuan'], t.st) +
     table('Karyawan', ['Usaha','Nama','Peran','Shift','Status','WA'], t.sf) +
     table('Workspace', ['Status','Tugas'], t.ws) +
-    '</body></html>';
+    '
+<button id="vanInstallBtn" type="button" aria-label="Install Van">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11"></path><path d="m7 9 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+  Install Van
+</button>
+<script>
+(function(){
+  var btn=document.getElementById('vanInstallBtn');
+  var deferred=null;
+  function standalone(){ return window.matchMedia && window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true; }
+  function show(){ if(btn && !standalone()) btn.style.display='inline-flex'; }
+  function hide(){ if(btn) btn.style.display='none'; }
+  if(standalone()){ hide(); return; }
+  window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); deferred=e; show(); });
+  window.addEventListener('appinstalled', function(){ deferred=null; hide(); try{ if(typeof toast==='function') toast('Van berhasil di-install'); }catch(e){} });
+  if(btn){
+    btn.addEventListener('click', async function(){
+      if(deferred){
+        try { await deferred.prompt(); await deferred.userChoice; } catch(e) {}
+        deferred=null; hide(); return;
+      }
+      try{
+        if(typeof toast==='function') toast('Jika tombol install belum muncul, buka menu Chrome ⋮ lalu pilih “Install app” atau “Tambahkan ke layar utama”.');
+      }catch(e){}
+    });
+  }
+  // Tampilkan tombol juga sebagai fallback petunjuk setelah halaman siap.
+  setTimeout(show, 1800);
+})();
+</script>
+</body></html>';
   downloadNamed('van-backup.xls', 'application/vnd.ms-excel', html);
 }
 function exportVanDoc(){
@@ -13400,16 +12580,18 @@ function enhanceLearnMemory(){
 
 
 function vanFeatureTip(page){
-  function L(k, fb){ try { if (typeof t==='function'){ var v=t(k); if(v&&v!==k) return v; } } catch(e){} return fb; }
   var tips = {
-    memory: L('memoryDesc', 'Isi profil usaha agar AI memakai konteks yang sama.'),
-    stock: L('stockDesc', 'Catat stok dan jual produk di sini.'),
-    finance: L('financeDesc', 'Catat kas non-produk.'),
-    crm: L('crmDesc', 'Simpan pembeli dan follow-up.'),
-    staff: L('staffDesc', 'Kelola tim dan status shift.'),
-    pulse: L('pulseSub', 'Diagnosis kebocoran omzet.'),
-    workflow: L('workflowSub', 'Alur setup sampai operasional.')
+    memory: 'Isi profil usaha agar AI, stok, dan keuangan memakai konteks yang sama.',
+    stock: 'Catat stok dan jual produk di sini. Omzet SKU masuk otomatis ke ringkasan.',
+    finance: 'Catat kas non-produk (biaya, gaji, jasa). Penjualan barang lewat Stok & Penjualan.',
+    crm: 'Simpan pembeli dan jadwal follow-up agar prospek tidak hilang.',
+    staff: 'Kelola tim dan status shift (sedang kerja / selesai).',
+    pulse: 'Baca indikasi kebocoran omzet dari data yang sudah Anda catat.',
+    workflow: 'Ikuti alur dari setup sampai operasional harian.',
+    finance: 'Catat uang masuk/keluar non-produk dan unduh laporan harian–tahunan.'
   };
+  // dedupe key
+  tips.finance = 'Catat kas non-produk (biaya, gaji, jasa). Penjualan barang lewat Stok & Penjualan. Unduh laporan kapan saja.';
   return tips[page] || '';
 }
 
@@ -13799,21 +12981,158 @@ function dismissSplash(force){
 })();
 </script>
 <!-- floating voice orb dihapus; suara hanya via tombol di halaman AI Learning -->
-<button id="learnVoiceBtn" type="button" style="display:none!important;visibility:hidden;width:0;height:0;position:absolute;pointer-events:none" aria-hidden="true" tabindex="-1"></button>
-
-<div class="van-onboard" id="vanOnboard" aria-modal="true">
-  <div class="van-onboard-card">
-    <div class="ob-logo">V</div>
-    <h2 id="obTitle">Selamat datang di Van</h2>
-    <p id="obText">Asisten AI untuk usaha: strategi, aksi, analisis, dan mutu.</p>
-    <div class="van-onboard-dots" id="obDots"><span class="on"></span><span></span><span></span><span></span></div>
-    <div class="van-onboard-actions">
-      <button type="button" class="btn-outline" id="obSkip" onclick="finishOnboard()">Lewati</button>
-      <button type="button" class="btn-outline" id="obWorkflow" onclick="finishOnboardWorkflow()">Alur Kerja</button>
-      <button type="button" class="btn" id="obNext" onclick="nextOnboard()">Lanjut</button>
-    </div>
-  </div>
+<button aria-hidden="true" id="learnVoiceBtn" style="display:none!important;visibility:hidden;width:0;height:0;position:absolute;pointer-events:none" tabindex="-1" type="button"></button>
+<div aria-modal="true" class="van-onboard" id="vanOnboard">
+<div class="van-onboard-card">
+<div class="ob-logo">V</div>
+<h2 id="obTitle">Selamat datang di Van</h2>
+<p id="obText">Asisten AI untuk usaha: strategi, aksi, analisis, dan mutu.</p>
+<div class="van-onboard-dots" id="obDots"><span class="on"></span><span></span><span></span><span></span></div>
+<div class="van-onboard-actions">
+<button class="btn-outline" id="obSkip" onclick="finishOnboard()" type="button">Lewati</button>
+<button class="btn-outline" id="obWorkflow" onclick="finishOnboardWorkflow()" type="button">Alur Kerja</button>
+<button class="btn" id="obNext" onclick="nextOnboard()" type="button">Lanjut</button>
+</div>
+</div>
 </div>
 <div id="vanBuildBadge" style="position:fixed;right:8px;bottom:4px;z-index:20;font-size:9px;color:var(--dim);opacity:.45;pointer-events:none">Van Revenue Leakage Engine · 2.0</div>
+<!-- VAN I18N STABILITY PATCH 2026.09 -->
+<script>
+(function(){
+  'use strict';
+  if (window.__VAN_I18N_STABILITY_202609__) return;
+  window.__VAN_I18N_STABILITY_202609__ = true;
+
+  function refreshChrome(){
+    try {
+      if (typeof window.applyVanLang === 'function') window.applyVanLang();
+    } catch(e) {}
+    try {
+      if (typeof window.fillLangSelect === 'function') window.fillLangSelect();
+    } catch(e) {}
+  }
+
+  try {
+    var originalGo = window.goPage;
+    if (typeof originalGo === 'function' && !originalGo.__vanStableI18nWrapped) {
+      var wrappedGo = function(){
+        var result = originalGo.apply(this, arguments);
+        setTimeout(refreshChrome, 0);
+        return result;
+      };
+      wrappedGo.__vanStableI18nWrapped = true;
+      window.goPage = wrappedGo;
+    }
+  } catch(e) {}
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', refreshChrome, {once:true});
+  } else {
+    setTimeout(refreshChrome, 0);
+  }
+})();
+</script>
+
+<!-- VAN LAUNCH HARDENING PATCH 2026.09 -->
+<script>
+(function(){
+  'use strict';
+  if (window.__VAN_LAUNCH_HARDENED_202609__) return;
+  window.__VAN_LAUNCH_HARDENED_202609__ = true;
+
+  /*
+   * Launch invariants:
+   * - never mutate/remove the existing Groq fallback key
+   * - never expose raw runtime errors to end users
+   * - keep the app usable when storage/network APIs are unavailable
+   * - provide a small, non-blocking runtime health signal
+   */
+  var RELEASE='2026.09-launch-clean-v2';
+  var bootAt=Date.now();
+
+  function safeText(v){ return String(v==null?'':v).replace(/[\u0000-\u001f\u007f]/g,' ').trim(); }
+  function notify(msg){
+    try {
+      if (typeof window.toast==='function') { window.toast(msg,4200); return; }
+    } catch(e){}
+  }
+  function storageOK(){
+    try { var k='__van_storage_probe__'; localStorage.setItem(k,'1'); localStorage.removeItem(k); return true; }
+    catch(e){ return false; }
+  }
+  function duplicateIds(){
+    var seen=Object.create(null), dup=[];
+    try {
+      document.querySelectorAll('[id]').forEach(function(el){
+        var id=el.id; if(!id) return;
+        seen[id]=(seen[id]||0)+1;
+      });
+      Object.keys(seen).forEach(function(id){ if(seen[id]>1) dup.push(id); });
+    } catch(e){}
+    return dup;
+  }
+  function audit(){
+    var key='';
+    try { key=(typeof GROQ_FALLBACK_KEY==='string') ? GROQ_FALLBACK_KEY : ''; } catch(e){}
+    var langs=0;
+    try { langs=Object.keys(window.VAN_LANGS||{}).length; } catch(e){}
+    return {
+      release:RELEASE,
+      uptimeMs:Date.now()-bootAt,
+      domReady:document.readyState,
+      storage:storageOK(),
+      online:navigator.onLine !== false,
+      languages:langs,
+      duplicateIds:duplicateIds(),
+      groqFallbackKeyPresent:!!key,
+      groqFallbackKeyMasked:key ? (key.slice(0,7)+'…'+key.slice(-4)) : '',
+      primaryModel:(typeof GROQ_MODEL!=='undefined' ? GROQ_MODEL : ''),
+      fallbackModel:(typeof GROQ_MODEL_FALLBACK!=='undefined' ? GROQ_MODEL_FALLBACK : ''),
+      visionModels:(typeof GROQ_VISION_MODELS!=='undefined' ? GROQ_VISION_MODELS.slice() : [])
+    };
+  }
+  window.VAN_LAUNCH_RELEASE=RELEASE;
+  window.VAN_LAUNCH_AUDIT=audit;
+
+  /* Runtime error containment. Detailed errors remain in console for debugging. */
+  window.addEventListener('error',function(ev){
+    try { console.error('[Van runtime]',ev.error||ev.message||ev); } catch(e){}
+    try { notify('Van mengalami gangguan kecil. Coba ulang tindakan terakhir.'); } catch(e){}
+  });
+  window.addEventListener('unhandledrejection',function(ev){
+    try { console.error('[Van promise]',ev.reason||ev); } catch(e){}
+    try { notify('Permintaan belum selesai. Periksa koneksi lalu coba lagi.'); } catch(e){}
+  });
+
+  /* Network state: no blocking modal; chat already has its own retry/fallback path. */
+  window.addEventListener('offline',function(){ notify('Mode offline: data lokal tetap tersedia.'); });
+  window.addEventListener('online',function(){ notify('Koneksi kembali. Van siap digunakan.'); try{ if(typeof probeBackend==='function') probeBackend(); }catch(e){} });
+
+  /* Keyboard/accessibility safety for transient dialogs. */
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Escape') return;
+    try{
+      var lb=document.querySelector('.media-lightbox.show');
+      if(lb){ lb.classList.remove('show'); return; }
+      if(typeof closeDrawer==='function') closeDrawer();
+    }catch(err){}
+  },true);
+
+  function bootAudit(){
+    var a=audit();
+    /* Remove any duplicate static IDs left by an older cached build. */
+    try {
+      ['learnVoiceBtn','vanOnboard','obTitle','obText','obDots','obSkip','obWorkflow','obNext','vanBuildBadge'].forEach(function(id){
+        var els=document.querySelectorAll('#'+CSS.escape(id));
+        for(var i=1;i<els.length;i++) els[i].remove();
+      });
+    } catch(e){}
+    a.duplicateIds=duplicateIds();
+    window.__VAN_LAUNCH_AUDIT_RESULT__=a;
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bootAudit,{once:true});
+  else bootAudit();
+})();
+</script>
 </body>
 </html>
